@@ -1,4 +1,4 @@
-import { segments } from "@/lib/mockData";
+import { segments } from "@/data/mockData";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 
 export function SegmentsSection() {

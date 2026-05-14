@@ -1,4 +1,4 @@
-import { investorStrategies } from "@/lib/mockData";
+import { investorStrategies } from "@/data/mockData";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 
 export function InvestorStrategyCards() {

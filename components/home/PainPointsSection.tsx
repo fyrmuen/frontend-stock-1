@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/Card";
-import { painPoints } from "@/lib/mockData";
+import { painPoints } from "@/data/mockData";
 
 export function PainPointsSection() {
   return (

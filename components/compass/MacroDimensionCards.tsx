@@ -1,4 +1,4 @@
-import { macroDimensions } from "@/lib/mockData";
+import { macroDimensions } from "@/data/mockData";
 
 export function MacroDimensionCards() {
   return (

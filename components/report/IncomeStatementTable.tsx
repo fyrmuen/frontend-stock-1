@@ -1,4 +1,4 @@
-import { incomeStatementRows } from "@/lib/mockData";
+import { incomeStatementRows } from "@/data/mockData";
 import { Table } from "@/components/ui/Table";
 
 export function IncomeStatementTable() {

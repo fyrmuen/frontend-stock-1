@@ -1,4 +1,4 @@
-import { summaryStocks } from "@/lib/mockData";
+import { summaryStocks } from "@/data/mockData";
 import { Badge } from "@/components/ui/Badge";
 
 export function SummaryCards() {

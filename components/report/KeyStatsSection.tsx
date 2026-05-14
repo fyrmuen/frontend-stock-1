@@ -1,4 +1,4 @@
-import { keyStats } from "@/lib/mockData";
+import { keyStats } from "@/data/mockData";
 
 export function KeyStatsSection() {
   return (

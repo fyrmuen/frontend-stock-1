@@ -1,4 +1,4 @@
-import { rotations } from "@/lib/mockData";
+import { rotations } from "@/data/mockData";
 import { Badge } from "@/components/ui/Badge";
 
 export function RotationCards() {

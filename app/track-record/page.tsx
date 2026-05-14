@@ -1,4 +1,4 @@
-import { statsBand } from "@/lib/mockData";
+import { statsBand } from "@/data/mockData";
 
 export default function TrackRecordPage() {
   return (

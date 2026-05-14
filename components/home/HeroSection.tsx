@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { heroContent } from "@/lib/mockData";
+import { heroContent } from "@/data/mockData";
 import { Button } from "@/components/ui/Button";
 import { GroveLogo } from "@/components/ui/GroveLogo";
 

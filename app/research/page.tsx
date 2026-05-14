@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AssetTab } from "@/lib/types";
-import { summaryStocks } from "@/lib/mockData";
+import { summaryStocks } from "@/data/mockData";
 import { DashboardHeader } from "@/components/research/DashboardHeader";
 import { AssetClassTabs } from "@/components/research/AssetClassTabs";
 import { SectorFilter } from "@/components/research/SectorFilter";
