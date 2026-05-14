@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget & Timeline Report - Frontend Stock Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 40px;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #1e40af;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #1e40af;
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+
+        .header .meta {
+            font-size: 11px;
+            color: #666;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 768px) {
+            .header .meta {
+                font-size: 12px;
+                gap: 30px;
+            }
+        }
+
+        .meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            color: #1e40af;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        @media (min-width: 768px) {
+            .section h2 {
+                font-size: 20px;
+            }
+        }
+
+        .section h3 {
+            font-size: 14px;
+            color: #333;
+            margin: 15px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .section h3 {
+                font-size: 16px;
+            }
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            border-left: 4px solid #1e40af;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        @media (min-width: 768px) {
+            .service-card {
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+
+        .service-card table {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .service-card table tr td {
+            padding: 4px 0;
+        }
+
+        @media (min-width: 768px) {
+            .service-card table tr td {
+                padding: 6px 0;
+            }
+        }
+
+        .service-card table tr td:first-child {
+            font-weight: 600;
+            width: 40%;
+            color: #1e40af;
+        }
+
+        .service-card table tr td:last-child {
+            text-align: right;
+            color: #333;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .service-card li {
+            padding: 2px 0;
+            font-size: 12px;
+            color: #555;
+        }
+
+        @media (min-width: 768px) {
+            .service-card li {
+                padding: 4px 0;
+                font-size: 13px;
+            }
+        }
+
+        .service-card li:before {
+            content: "✓ ";
+            color: #22c55e;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .budget-breakdown {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            overflow-x: auto;
+        }
+
+        @media (min-width: 768px) {
+            .budget-breakdown {
+                padding: 20px;
+                font-size: 14px;
+            }
+        }
+
+        .budget-breakdown div {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+        }
+
+        @media (min-width: 768px) {
+            .budget-breakdown div {
+                padding: 6px 0;
+            }
+        }
+
+        .budget-breakdown .label {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .budget-breakdown .amount {
+            font-weight: bold;
+            color: #1e40af;
+            text-align: right;
+            margin-left: 10px;
+        }
+
+        .budget-breakdown .divider {
+            border-top: 2px solid #1e40af;
+            margin: 6px 0;
+        }
+
+        @media (min-width: 768px) {
+            .budget-breakdown .divider {
+                margin: 8px 0;
+            }
+        }
+
+        .budget-breakdown .total {
+            font-weight: bold;
+            font-size: 14px;
+            color: #1e40af;
+            padding: 8px 0;
+        }
+
+        @media (min-width: 768px) {
+            .budget-breakdown .total {
+                font-size: 16px;
+                padding: 10px 0;
+            }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+
+        @media (min-width: 768px) {
+            table {
+                font-size: 14px;
+            }
+        }
+
+        table thead {
+            background: #1e40af;
+            color: white;
+        }
+
+        table th {
+            padding: 8px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        @media (min-width: 768px) {
+            table th {
+                padding: 12px;
+            }
+        }
+
+        table td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        @media (min-width: 768px) {
+            table td {
+                padding: 10px 12px;
+            }
+        }
+
+        table tbody tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        table tbody tr:hover {
+            background: #f0f4ff;
+        }
+
+        .roi-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-size: 13px;
+        }
+
+        @media (min-width: 768px) {
+            .roi-box {
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+
+        .roi-box strong {
+            color: #16a34a;
+        }
+
+        .phase-card {
+            background: #f0f4ff;
+            border-left: 4px solid #1e40af;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .phase-card {
+                padding: 15px;
+                margin-bottom: 15px;
+                font-size: 13px;
+            }
+        }
+
+        .phase-card h4 {
+            color: #1e40af;
+            margin-bottom: 8px;
+            font-size: 13px;
+        }
+
+        @media (min-width: 768px) {
+            .phase-card h4 {
+                font-size: 15px;
+            }
+        }
+
+        .phase-card .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+
+        @media (min-width: 768px) {
+            .phase-card .details {
+                gap: 10px;
+                font-size: 13px;
+            }
+        }
+
+        .phase-card .detail-item {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .phase-card .detail-item strong {
+            color: #1e40af;
+            min-width: 50px;
+        }
+
+        .task-list {
+            list-style: none;
+            padding-left: 0;
+            font-size: 11px;
+            color: #555;
+        }
+
+        @media (min-width: 768px) {
+            .task-list {
+                font-size: 13px;
+            }
+        }
+
+        .task-list li {
+            padding: 3px 0;
+            padding-left: 18px;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .task-list li {
+                padding: 4px 0;
+                padding-left: 20px;
+            }
+        }
+
+        .task-list li:before {
+            content: "□ ";
+            position: absolute;
+            left: 0;
+            color: #1e40af;
+        }
+
+        .checklist {
+            list-style: none;
+            padding: 0;
+            font-size: 12px;
+        }
+
+        @media (min-width: 768px) {
+            .checklist {
+                font-size: 14px;
+            }
+        }
+
+        .checklist li {
+            padding: 6px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        @media (min-width: 768px) {
+            .checklist li {
+                padding: 8px 0;
+            }
+        }
+
+        .checklist li:before {
+            content: "☐ ";
+            color: #1e40af;
+            font-size: 16px;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+
+        .overview-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 13px;
+        }
+
+        @media (min-width: 768px) {
+            .overview-box {
+                padding: 15px;
+                font-size: 14px;
+            }
+        }
+
+        .overview-box strong {
+            color: #16a34a;
+        }
+
+        .footer {
+            text-align: center;
+            padding-top: 15px;
+            border-top: 2px solid #ddd;
+            font-size: 10px;
+            color: #999;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .footer {
+                font-size: 11px;
+                padding-top: 20px;
+                margin-top: 30px;
+            }
+        }
+
+        .currency-note {
+            font-size: 11px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .currency-note {
+                font-size: 12px;
+            }
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+
+        .print-button {
+            text-align: center;
+            margin: 15px 0;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .print-button {
+                margin: 20px 0;
+            }
+        }
+
+        .print-button button {
+            background: #1e40af;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        @media (min-width: 768px) {
+            .print-button button {
+                padding: 10px 30px;
+                font-size: 14px;
+            }
+        }
+
+        .print-button button:hover {
+            background: #1e3a8a;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 20px;
+            }
+
+            .no-break {
+                page-break-inside: avoid;
+            }
+
+            @page {
+                margin: 20mm;
+            }
+
+            .print-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📊 Budget & Timeline Report</h1>
+            <p style="color: #666; font-size: 12px; margin-top: 10px;">Migrasi Frontend HTML → Next.js + Integrasi Backend Python</p>
+            <div class="meta">
+                <span>📅 4 Minggu Development</span>
+                <span>💱 1 USD = Rp 17.000</span>
+            </div>
+        </div>
+
+        <!-- Print Button -->
+        <div class="print-button">
+            <button onclick="window.print()">🖨️ Print / Export to PDF</button>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="section no-break">
+            <h2>📋 Executive Summary</h2>
+            <div class="overview-box">
+                <p>Proyek migrasi frontend dari HTML ke Next.js dengan integrasi backend Python (scrap-idx-fundamental) membutuhkan <span class="highlight"><strong>~4 minggu development</strong></span> dengan tim 2 developer terkoordinasi baik. Timeline padat namun realistis dengan fokus pada MVP dan kualitas.</p>
+            </div>
+        </div>
+
+        <!-- PROJECT TIMELINE SECTION -->
+        <div class="section no-break">
+            <h2>⏱️ Project Timeline (4 Minggu)</h2>
+            
+            <div class="phase-card">
+                <h4>Week 1: Setup & Planning</h4>
+                <div class="details">
+                    <div class="detail-item">
+                        <strong>Duration:</strong> <span>1 minggu</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Goal:</strong> <span>Foundation Ready</span>
+                    </div>
+                </div>
+                <ul class="task-list">
+                    <li>Repository initialization & development environment setup</li>
+                    <li>Initialize Next.js project dengan TypeScript & Tailwind CSS</li>
+                    <li>Backend API audit & documentation</li>
+                    <li>Define API contracts & create mock responses</li>
+                    <li>Setup CI/CD pipeline & GitHub Actions</li>
+                    <li>Finalize task board & team alignment</li>
+                </ul>
+            </div>
+
+            <div class="phase-card">
+                <h4>Week 2: Frontend Development & Integration</h4>
+                <div class="details">
+                    <div class="detail-item">
+                        <strong>Duration:</strong> <span>1 minggu</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Goal:</strong> <span>Integration Working</span>
+                    </div>
+                </div>
+                <ul class="task-list">
+                    <li>Migrate core pages to React components</li>
+                    <li>Setup Axios & custom API hooks (useFundamental, useStockSearch, etc)</li>
+                    <li>Implement React Query / SWR caching strategy</li>
+                    <li>Connect frontend to backend APIs</li>
+                    <li>Add loading states, error handling & toast notifications</li>
+                    <li>Backend enhancement: CORS, validation, rate limiting</li>
+                </ul>
+            </div>
+
+            <div class="phase-card">
+                <h4>Week 3: Testing & Enhancement</h4>
+                <div class="details">
+                    <div class="detail-item">
+                        <strong>Duration:</strong> <span>1 minggu</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Goal:</strong> <span>Tests Passing</span>
+                    </div>
+                </div>
+                <ul class="task-list">
+                    <li>Unit tests untuk React components (target: 80% coverage)</li>
+                    <li>Integration tests untuk API calls & workflows</li>
+                    <li>Backend unit & integration tests</li>
+                    <li>Load testing & performance profiling</li>
+                    <li>Cross-browser compatibility & security audit</li>
+                    <li>Bug fixes & optimization</li>
+                </ul>
+            </div>
+
+            <div class="phase-card">
+                <h4>Week 4: QA & Deployment</h4>
+                <div class="details">
+                    <div class="detail-item">
+                        <strong>Duration:</strong> <span>1 minggu</span>
+                    </div>
+                    <div class="detail-item">
+                        <strong>Goal:</strong> <span>Production Ready</span>
+                    </div>
+                </div>
+                <ul class="task-list">
+                    <li>Final regression testing & QA</li>
+                    <li>Code review, cleanup & refactoring</li>
+                    <li>Documentation completion (API, deployment, support)</li>
+                    <li>UAT & stakeholder sign-off</li>
+                    <li>Production deployment & smoke testing</li>
+                    <li>Post-launch monitoring & support handover</li>
+                </ul>
+            </div>
+
+            <!-- Timeline Table -->
+            <table style="margin-top: 15px;">
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Focus</th>
+                        <th>Duration</th>
+                        <th>Deliverables</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Week 1</td>
+                        <td>Setup & Planning</td>
+                        <td>1 minggu</td>
+                        <td>Infrastructure ready, APIs documented</td>
+                    </tr>
+                    <tr>
+                        <td>Week 2</td>
+                        <td>Dev & Integration</td>
+                        <td>1 minggu</td>
+                        <td>Frontend functional, APIs connected</td>
+                    </tr>
+                    <tr>
+                        <td>Week 3</td>
+                        <td>Testing & QA</td>
+                        <td>1 minggu</td>
+                        <td>Tests passing, bugs fixed</td>
+                    </tr>
+                    <tr>
+                        <td>Week 4</td>
+                        <td>Deployment</td>
+                        <td>1 minggu</td>
+                        <td>Production ready, go-live</td>
+                    </tr>
+                    <tr style="background: #e0e7ff; font-weight: bold;">
+                        <td colspan="2">TOTAL</td>
+                        <td colspan="2">4 minggu</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- TECH STACK -->
+        <div class="section no-break">
+            <h2>🛠️ Tech Stack</h2>
+            
+            <h3>Frontend</h3>
+            <ul style="list-style: none; padding: 0; font-size: 12px;">
+                <li style="padding: 3px 0;">✓ Framework: <strong>Next.js 14+</strong></li>
+                <li style="padding: 3px 0;">✓ Language: <strong>TypeScript</strong></li>
+                <li style="padding: 3px 0;">✓ UI Library: <strong>React 18+</strong></li>
+                <li style="padding: 3px 0;">✓ Styling: <strong>Tailwind CSS</strong></li>
+                <li style="padding: 3px 0;">✓ State Management: <strong>React Query / SWR</strong></li>
+                <li style="padding: 3px 0;">✓ HTTP Client: <strong>Axios</strong></li>
+                <li style="padding: 3px 0;">✓ Testing: <strong>Jest + React Testing Library</strong></li>
+            </ul>
+
+            <h3 style="margin-top: 12px;">Backend</h3>
+            <ul style="list-style: none; padding: 0; font-size: 12px;">
+                <li style="padding: 3px 0;">✓ Framework: <strong>Flask</strong></li>
+                <li style="padding: 3px 0;">✓ Language: <strong>Python 3.9+</strong></li>
+                <li style="padding: 3px 0;">✓ API: <strong>REST API</strong></li>
+                <li style="padding: 3px 0;">✓ Scraping: <strong>BeautifulSoup4</strong></li>
+                <li style="padding: 3px 0;">✓ AI Integration: <strong>OpenAI API</strong></li>
+            </ul>
+        </div>
+
+        <!-- Services & Budget -->
+        <div class="section no-break">
+            <h2>💰 External Services & Budget</h2>
+
+            <!-- Service 1: OpenAI -->
+            <div class="service-card">
+                <h3>1️⃣ OpenAI API - $20/bulan</h3>
+                <table>
+                    <tr>
+                        <td>Cost</td>
+                        <td><strong>$20 USD</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Konversi</td>
+                        <td>1 USD = Rp 17.000</td>
+                    </tr>
+                    <tr>
+                        <td>Harga/Bulan</td>
+                        <td><strong style="color: #1e40af;">Rp 340.000</strong></td>
+                    </tr>
+                </table>
+                <p style="font-weight: 600; margin-bottom: 6px;">Digunakan untuk:</p>
+                <ul>
+                    <li>Broker Summary - Ringkasan analisis broker otomatis</li>
+                    <li>Buy/Sell Recommendations - Rekomendasi trading berbasis AI</li>
+                    <li>Fundamental Summary - Analisis data keuangan mendalam</li>
+                    <li>News Sentiment Analysis - Sentiment dari berita pasar</li>
+                    <li>Screener Insights - Penjelasan hasil screener</li>
+                </ul>
+            </div>
+
+            <!-- Service 2: Sectors.app -->
+            <div class="service-card">
+                <h3>2️⃣ Sectors.app API - $49/bulan</h3>
+                <table>
+                    <tr>
+                        <td>Cost</td>
+                        <td><strong>$49 USD</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Konversi</td>
+                        <td>1 USD = Rp 17.000</td>
+                    </tr>
+                    <tr>
+                        <td>Harga/Bulan</td>
+                        <td><strong style="color: #1e40af;">Rp 833.000</strong></td>
+                    </tr>
+                </table>
+                <p style="font-weight: 600; margin-bottom: 6px;">Digunakan untuk:</p>
+                <ul>
+                    <li>Data Emitan Indonesia - Database saham IDX lengkap</li>
+                    <li>Financial Data - Laporan keuangan & financial statements</li>
+                    <li>Shareholder Information - Struktur kepemilikan & pemegang saham</li>
+                    <li>Corporate Actions - Dividend, stock split, rights offering</li>
+                    <li>Valuation Data - Market cap, P/E ratio, dividend yield</li>
+                </ul>
+            </div>
+
+            <!-- Service 3: goapi -->
+            <div class="service-card">
+                <h3>3️⃣ goapi - Rp 500k/bulan</h3>
+                <table>
+                    <tr>
+                        <td>Cost</td>
+                        <td><strong>Rp 500.000</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Harga/Bulan</td>
+                        <td><strong style="color: #1e40af;">Rp 500.000</strong></td>
+                    </tr>
+                </table>
+                <p style="font-weight: 600; margin-bottom: 6px;">Digunakan untuk:</p>
+                <ul>
+                    <li>Real-time Stock Data - Harga bid/ask, volume live IDX</li>
+                    <li>Historical Price Data - Candlestick OHLC untuk technical analysis</li>
+                    <li>Index Data - IDX Composite, LQ45, IDX30, IDX80</li>
+                    <li>Market Statistics - Data untuk sentiment analysis</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Budget Summary -->
+        <div class="section no-break">
+            <h2>💵 Total Budget Per Bulan</h2>
+            <div class="budget-breakdown">
+                <div><span class="label">OpenAI API</span> <span class="amount">Rp 340.000</span></div>
+                <div><span class="label">Sectors.app</span> <span class="amount">Rp 833.000</span></div>
+                <div><span class="label">goapi</span> <span class="amount">Rp 500.000</span></div>
+                <div class="divider"></div>
+                <div class="total"><span class="label">TOTAL PER BULAN</span> <span class="amount">Rp 1.673.000</span></div>
+            </div>
+            <div class="currency-note">💡 Estimasi: ~$98 USD per bulan</div>
+        </div>
+
+        <!-- Effort Estimation -->
+        <div class="section no-break">
+            <h2>📊 Effort Estimation</h2>
+            <div class="roi-box">
+                <p><strong>Total Development Time:</strong> ~4 minggu (20-24 hari kerja)</p>
+                <p style="margin-top: 5px;"><strong>Team Size:</strong> 2 developer (1 frontend, 1 backend) atau 1 full-stack developer</p>
+                <p style="margin-top: 5px;"><strong>Daily Commitment:</strong> 8 jam/hari + 15 min standup</p>
+                <p style="margin-top: 5px;"><strong>Contingency:</strong> +10% (buffer untuk unexpected issues)</p>
+            </div>
+        </div>
+
+        <!-- Key Milestones -->
+        <div class="section no-break">
+            <h2>✅ Key Milestones</h2>
+            <ul class="checklist">
+                <li>Week 1 Complete → Development infrastructure ready</li>
+                <li>Week 2 Complete → Frontend integration working</li>
+                <li>Week 3 Complete → Tests passing, bugs fixed</li>
+                <li>Week 4 Complete → Production launch ready</li>
+            </ul>
+        </div>
+
+        <!-- Approval Checklist -->
+        <div class="section no-break">
+            <h2>✓ Pre-Launch Checklist</h2>
+            <ul class="checklist">
+                <li>Timeline approved: 4 minggu development</li>
+                <li>Team resources allocated: 2 developers committed</li>
+                <li>Development environment ready</li>
+                <li>Budget approved: Rp 1.673.000/bulan</li>
+                <li>API vendors approved: OpenAI, Sectors.app, goapi</li>
+                <li>All code tested & reviewed</li>
+                <li>Documentation complete</li>
+                <li>UAT passed & stakeholder sign-off received</li>
+                <li>Deployment runbook prepared</li>
+                <li>Ready to start Week 1</li>
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Exchange Rate: 1 USD = Rp 17.000</p>
+            <p style="margin-top: 8px;">Project Repository: <strong>fauzannurhikmah/frontend-stock</strong></p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.print-button button').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
+</body>
+</html>
