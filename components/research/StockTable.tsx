@@ -53,7 +53,7 @@ export function StockTable({ rows }: { rows: SummaryStock[] }) {
         </thead>
 
         <tbody>
-          {rows.map((row) => {
+          {rows.map((row:any) => {
             const stance = (row.status as StanceKey) ?? "Neutral";
             const cfg = stanceCfg[stance] ?? stanceCfg["Neutral"];
             const gs = row.groveScores ?? { g: row.score, r: row.score, o: row.score, v: row.score, e: row.score };
