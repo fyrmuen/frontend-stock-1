@@ -1,0 +1,5034 @@
+[
+  {
+    "ticker": "BBCA",
+    "name": "Bank Central Asia",
+    "sector": "Perbankan",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "9.800",
+    "change": "+0.51%",
+    "fv": "12.000–13.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 70,
+      "neg": 8,
+      "ev": "+38%",
+      "score": 85,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 18,
+      "ev": "+14%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+3.2%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BMRI",
+    "name": "Bank Mandiri",
+    "sector": "Perbankan",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "5.200",
+    "change": "-0.38%",
+    "fv": "6.800–7.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 65,
+      "neg": 15,
+      "ev": "+33%",
+      "score": 80,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+10%",
+      "score": 74,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+3%",
+      "score": 70,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BBNI",
+    "name": "Bank BNI",
+    "sector": "Perbankan",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "4.420",
+    "change": "+0.45%",
+    "fv": "5.500–6.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 58,
+      "neg": 18,
+      "ev": "+25%",
+      "score": 76,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+9%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "TLKM",
+    "name": "Telkom Indonesia",
+    "sector": "Telekomunikasi",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "3.140",
+    "change": "+0.32%",
+    "fv": "3.800–4.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 58,
+      "neg": 18,
+      "ev": "+22%",
+      "score": 74,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 22,
+      "ev": "+8%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+1.5%",
+      "score": 61,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "ASII",
+    "name": "Astra International",
+    "sector": "Otomotif",
+    "color": "auto",
+    "assetClass": "stocks",
+    "price": "4.820",
+    "change": "+0.21%",
+    "fv": "5.500–6.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+20%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+12%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+2.8%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "INDF",
+    "name": "Indofood Sukses Makmur",
+    "sector": "Consumer",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "7.025",
+    "change": "+0.36%",
+    "fv": "8.000–8.800",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+18%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 58,
+      "neg": 17,
+      "ev": "+14%",
+      "score": 73,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 25,
+      "ev": "+3.5%",
+      "score": 65,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "EXCL",
+    "name": "XL Axiata",
+    "sector": "Telekomunikasi",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "2.100",
+    "change": "+1.45%",
+    "fv": "2.600–2.900",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+15%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+12%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 67,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "KLBF",
+    "name": "Kalbe Farma",
+    "sector": "Healthcare",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "1.510",
+    "change": "-0.33%",
+    "fv": "1.800–2.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+17%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+8%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+1.8%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "CPIN",
+    "name": "Charoen Pokphand",
+    "sector": "Agribisnis",
+    "color": "agri",
+    "assetClass": "stocks",
+    "price": "5.300",
+    "change": "+0.57%",
+    "fv": "6.200–6.800",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+18%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+10%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PGAS",
+    "name": "Perusahaan Gas Negara",
+    "sector": "Energi",
+    "color": "energy",
+    "assetClass": "stocks",
+    "price": "1.635",
+    "change": "+0.31%",
+    "fv": "2.000–2.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 48,
+      "neg": 25,
+      "ev": "+16%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+11%",
+      "score": 69,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 26,
+      "ev": "+3.5%",
+      "score": 65,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SMGR",
+    "name": "Semen Indonesia",
+    "sector": "Infrastruktur",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "4.350",
+    "change": "+0.12%",
+    "fv": "5.000–5.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+14%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 40,
+      "neg": 30,
+      "ev": "+6%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 35,
+      "ev": "+1%",
+      "score": 55,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "UNVR",
+    "name": "Unilever Indonesia",
+    "sector": "Consumer",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "2.600",
+    "change": "-0.76%",
+    "fv": "3.200–3.600",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 35,
+      "neg": 40,
+      "ev": "+5%",
+      "score": 52,
+      "stance": "uw"
+    },
+    "mt": {
+      "prob": 30,
+      "neg": 42,
+      "ev": "-2%",
+      "score": 48,
+      "stance": "uw"
+    },
+    "st": {
+      "prob": 28,
+      "neg": 45,
+      "ev": "-3%",
+      "score": 44,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "TPIA",
+    "name": "Chandra Asri Pacific",
+    "sector": "Petrokimia",
+    "color": "energy",
+    "assetClass": "stocks",
+    "price": "8.450",
+    "change": "-1.29%",
+    "fv": "9.500–10.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 35,
+      "neg": 38,
+      "ev": "+8%",
+      "score": 54,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 40,
+      "neg": 32,
+      "ev": "+7%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 36,
+      "ev": "+0.5%",
+      "score": 52,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "SIDO",
+    "name": "Sido Muncul",
+    "sector": "Healthcare",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "760",
+    "change": "+0.00%",
+    "fv": "900–1.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+16%",
+      "score": 68,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 26,
+      "ev": "+7%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 32,
+      "neg": 36,
+      "ev": "-0.5%",
+      "score": 52,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "ADMR",
+    "name": "Adaro Minerals",
+    "sector": "Mining · Coal Met",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "1.420",
+    "change": "+1.43%",
+    "fv": "1.900–2.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+15%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 62,
+      "neg": 18,
+      "ev": "+18%",
+      "score": 75,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+5%",
+      "score": 68,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "AADI",
+    "name": "Adaro Andalan Indonesia",
+    "sector": "Mining · Coal Thermal",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "6.700",
+    "change": "+0.75%",
+    "fv": "8.000–9.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 50,
+      "neg": 25,
+      "ev": "+19%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 22,
+      "ev": "+12%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+5%",
+      "score": 69,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PTBA",
+    "name": "Bukit Asam",
+    "sector": "Mining · Coal Thermal",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "3.200",
+    "change": "-0.62%",
+    "fv": "3.600–4.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 42,
+      "neg": 30,
+      "ev": "+10%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 25,
+      "ev": "+9%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+4.5%",
+      "score": 69,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "INCO",
+    "name": "Vale Indonesia",
+    "sector": "Mining · Nickel",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "3.680",
+    "change": "+2.11%",
+    "fv": "4.500–5.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 40,
+      "neg": 32,
+      "ev": "+12%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 25,
+      "ev": "+11%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+6%",
+      "score": 71,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "MDKA",
+    "name": "Merdeka Copper Gold",
+    "sector": "Mining · Copper Gold",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "2.150",
+    "change": "+1.89%",
+    "fv": "2.800–3.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 38,
+      "neg": 35,
+      "ev": "+14%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+10%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+5.5%",
+      "score": 70,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "ANTM",
+    "name": "Aneka Tambang",
+    "sector": "Mining · Gold Nickel",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "1.720",
+    "change": "+1.18%",
+    "fv": "2.200–2.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 22,
+      "ev": "+22%",
+      "score": 73,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 58,
+      "neg": 20,
+      "ev": "+14%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+5.5%",
+      "score": 70,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "AALI",
+    "name": "Astra Agro Lestari",
+    "sector": "CPO",
+    "color": "agri",
+    "assetClass": "stocks",
+    "price": "7.650",
+    "change": "+1.32%",
+    "fv": "9.500–10.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 22,
+      "ev": "+24%",
+      "score": 73,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+4%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "LSIP",
+    "name": "PP London Sumatra",
+    "sector": "CPO",
+    "color": "agri",
+    "assetClass": "stocks",
+    "price": "1.150",
+    "change": "+0.87%",
+    "fv": "1.400–1.600",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 52,
+      "neg": 24,
+      "ev": "+22%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 26,
+      "ev": "+10%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "HRUM",
+    "name": "Harum Energy",
+    "sector": "Mining · Hybrid",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "1.450",
+    "change": "+2.11%",
+    "fv": "1.900–2.100",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 48,
+      "neg": 26,
+      "ev": "+18%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 22,
+      "ev": "+13%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+4.5%",
+      "score": 67,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "AAPL",
+    "name": "Apple Inc.",
+    "sector": "Technology · Hardware",
+    "color": "tech",
+    "assetClass": "us",
+    "price": "USD 235",
+    "change": "+0.85%",
+    "fv": "USD 260–280",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 62,
+      "neg": 18,
+      "ev": "+18%",
+      "score": 78,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+10%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+3.5%",
+      "score": 68,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "sector": "Technology · Cloud",
+    "color": "tech",
+    "assetClass": "us",
+    "price": "USD 420",
+    "change": "+1.15%",
+    "fv": "USD 480–520",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 68,
+      "neg": 15,
+      "ev": "+25%",
+      "score": 83,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 58,
+      "neg": 18,
+      "ev": "+12%",
+      "score": 75,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+4%",
+      "score": 70,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "sector": "Technology · AI Chips",
+    "color": "tech",
+    "assetClass": "us",
+    "price": "USD 142",
+    "change": "+2.35%",
+    "fv": "USD 165–185",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 28,
+      "ev": "+22%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 25,
+      "ev": "+13%",
+      "score": 73,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 30,
+      "ev": "+5%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet (Google)",
+    "sector": "Technology · Ads Cloud",
+    "color": "tech",
+    "assetClass": "us",
+    "price": "USD 185",
+    "change": "+0.65%",
+    "fv": "USD 215–240",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 60,
+      "neg": 20,
+      "ev": "+21%",
+      "score": 76,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+11%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 47,
+      "neg": 25,
+      "ev": "+3.5%",
+      "score": 67,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "TSM",
+    "name": "Taiwan Semiconductor",
+    "sector": "Technology · Foundry",
+    "color": "tech",
+    "assetClass": "us",
+    "price": "USD 205",
+    "change": "+1.75%",
+    "fv": "USD 240–270",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 65,
+      "neg": 18,
+      "ev": "+28%",
+      "score": 79,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 58,
+      "neg": 20,
+      "ev": "+14%",
+      "score": 74,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+5%",
+      "score": 71,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "INDON 2034",
+    "name": "Indonesia Sovereign USD 10Y",
+    "sector": "Bond · Sovereign USD",
+    "color": "bond",
+    "assetClass": "bonds",
+    "price": "100.25",
+    "change": "+0.30%",
+    "fv": "YTM 5.85%",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 62,
+      "neg": 18,
+      "ev": "+22%",
+      "score": 76,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 58,
+      "neg": 20,
+      "ev": "+9%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+2.5%",
+      "score": 69,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "FR100",
+    "name": "SUN Seri FR100 (IDR 10Y)",
+    "sector": "Bond · Sovereign IDR",
+    "color": "bond",
+    "assetClass": "bonds",
+    "price": "98.80",
+    "change": "+1.10%",
+    "fv": "YTM 6.85%",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 65,
+      "neg": 15,
+      "ev": "+18%",
+      "score": 77,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 60,
+      "neg": 17,
+      "ev": "+10%",
+      "score": 74,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+3.5%",
+      "score": 71,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "INDOIS 2034",
+    "name": "Indonesia Global Sukuk USD",
+    "sector": "Bond · Sukuk USD",
+    "color": "bond",
+    "assetClass": "bonds",
+    "price": "100.15",
+    "change": "+0.20%",
+    "fv": "YTM 5.75%",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 60,
+      "neg": 18,
+      "ev": "+20%",
+      "score": 74,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+8%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 22,
+      "ev": "+2%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MMF-USD",
+    "name": "Reksadana Pasar Uang USD",
+    "sector": "MMF · USD",
+    "color": "etf",
+    "assetClass": "mmf",
+    "price": "1.0525",
+    "change": "+0.42%",
+    "fv": "Net yield ~4.25%",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 12,
+      "ev": "+17%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 15,
+      "ev": "+5%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 55,
+      "neg": 10,
+      "ev": "+1%",
+      "score": 73,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "MMF-IDR",
+    "name": "Reksadana Pasar Uang IDR",
+    "sector": "MMF · IDR",
+    "color": "etf",
+    "assetClass": "mmf",
+    "price": "1.325",
+    "change": "+0.52%",
+    "fv": "Net yield ~5.50%",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 52,
+      "neg": 10,
+      "ev": "+15%",
+      "score": 68,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 12,
+      "ev": "+5%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 54,
+      "neg": 8,
+      "ev": "+1.3%",
+      "score": 72,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "SPY",
+    "name": "SPDR S&P 500 ETF",
+    "sector": "ETF · US Equity",
+    "color": "etf",
+    "assetClass": "mmf",
+    "price": "USD 565",
+    "change": "+0.55%",
+    "fv": "USD 600–620",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 60,
+      "neg": 20,
+      "ev": "+25%",
+      "score": 75,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 22,
+      "ev": "+9%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+2.5%",
+      "score": 67,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "QQQ",
+    "name": "Invesco Nasdaq 100 ETF",
+    "sector": "ETF · US Tech",
+    "color": "etf",
+    "assetClass": "mmf",
+    "price": "USD 545",
+    "change": "+0.85%",
+    "fv": "USD 590–620",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 58,
+      "neg": 25,
+      "ev": "+28%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 25,
+      "ev": "+11%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+3%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "XIDX",
+    "name": "ETF IDX30 Indonesia",
+    "sector": "ETF · IHSG",
+    "color": "etf",
+    "assetClass": "mmf",
+    "price": "4.450",
+    "change": "+0.72%",
+    "fv": "4.700–5.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 22,
+      "ev": "+18%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+8%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+2.5%",
+      "score": 67,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ACES",
+    "name": "Ace Hardware Indonesia",
+    "sector": "Consumer · Ritel",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "880",
+    "change": "+0.57%",
+    "fv": "1.100–1.250",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+28%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+14%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MYOR",
+    "name": "Mayora Indah",
+    "sector": "Consumer · FMCG",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "2.810",
+    "change": "+0.36%",
+    "fv": "3.400–3.800",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 58,
+      "neg": 18,
+      "ev": "+26%",
+      "score": 73,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+12%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+3.5%",
+      "score": 65,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "CMRY",
+    "name": "Cisarua Mountain Dairy",
+    "sector": "Consumer · Dairy",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "3.450",
+    "change": "+0.87%",
+    "fv": "4.500–5.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 58,
+      "neg": 18,
+      "ev": "+32%",
+      "score": 74,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+14%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "RALS",
+    "name": "Ramayana Lestari",
+    "sector": "Consumer · Ritel",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "855",
+    "change": "+0.59%",
+    "fv": "1.100–1.250",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 25,
+      "ev": "+25%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+12%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "FILM",
+    "name": "MD Pictures",
+    "sector": "Media & Entertainment",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "2.150",
+    "change": "+2.38%",
+    "fv": "3.000–3.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+32%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+18%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+7%",
+      "score": 70,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "ICBP",
+    "name": "Indofood CBP Sukses Makmur",
+    "sector": "Consumer · FMCG",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "10.725",
+    "change": "+0.47%",
+    "fv": "13.000–14.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 62,
+      "neg": 15,
+      "ev": "+28%",
+      "score": 77,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+14%",
+      "score": 73,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 22,
+      "ev": "+4%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ULTJ",
+    "name": "Ultra Jaya Milk",
+    "sector": "Consumer · Dairy",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "1.865",
+    "change": "+0.81%",
+    "fv": "2.300–2.600",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+26%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+10%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+2.5%",
+      "score": 61,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "GOOD",
+    "name": "Garudafood Putra Putri Jaya",
+    "sector": "Consumer · FMCG",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "396",
+    "change": "+1.02%",
+    "fv": "500–580",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 68,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "CAMP",
+    "name": "Campina Ice Cream",
+    "sector": "Consumer · FMCG",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "560",
+    "change": "+0.90%",
+    "fv": "680–780",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+27%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+10%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "DMND",
+    "name": "Diamond Food Indonesia",
+    "sector": "Consumer · FMCG",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "700",
+    "change": "+1.45%",
+    "fv": "900–1.050",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+32%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 27,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SKBM",
+    "name": "Sekar Bumi",
+    "sector": "Consumer · Food",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "278",
+    "change": "+0.72%",
+    "fv": "360–420",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 25,
+      "ev": "+35%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+14%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+2%",
+      "score": 56,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SKLT",
+    "name": "Sekar Laut",
+    "sector": "Consumer · FMCG",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "640",
+    "change": "+0.47%",
+    "fv": "800–920",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+28%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 24,
+      "ev": "+10%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "CLEO",
+    "name": "Sariguna Primatirta",
+    "sector": "Consumer · FMCG",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "765",
+    "change": "+1.19%",
+    "fv": "980–1.100",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+35%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+15%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PZZA",
+    "name": "Sarimelati Kencana (Pizza Hut)",
+    "sector": "Consumer · Restoran",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "535",
+    "change": "-0.37%",
+    "fv": "680–780",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+26%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 26,
+      "ev": "+10%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 58,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BELI",
+    "name": "PT Technomed Asia",
+    "sector": "Consumer · E-Commerce",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "382",
+    "change": "+2.14%",
+    "fv": "500–600",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 40,
+      "neg": 32,
+      "ev": "+38%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 38,
+      "neg": 32,
+      "ev": "+12%",
+      "score": 54,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 35,
+      "ev": "+3%",
+      "score": 50,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "HRTA",
+    "name": "Hartadinata Abadi",
+    "sector": "Consumer · Perhiasan",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "395",
+    "change": "+0.51%",
+    "fv": "500–580",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+13%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+4%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "CSAP",
+    "name": "Catur Sentosa Adiprana",
+    "sector": "Consumer · Distribusi",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "680",
+    "change": "+0.74%",
+    "fv": "860–980",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+32%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 27,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MIDI",
+    "name": "Midi Utama Indonesia",
+    "sector": "Consumer · Ritel",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "510",
+    "change": "+0.39%",
+    "fv": "640–720",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+28%",
+      "score": 69,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+12%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+3.5%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SDPC",
+    "name": "Millennium Pharmacon International",
+    "sector": "Consumer · Distribusi",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "285",
+    "change": "+1.07%",
+    "fv": "360–420",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+30%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 26,
+      "ev": "+10%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 56,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ITIC",
+    "name": "Indonesian Tobacco",
+    "sector": "Consumer · Tembakau",
+    "color": "consumer",
+    "assetClass": "stocks",
+    "price": "17.300",
+    "change": "+0.58%",
+    "fv": "21.000–24.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+22%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+8%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+2%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BFIN",
+    "name": "BFI Finance",
+    "sector": "Multifinance",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "1.065",
+    "change": "+1.43%",
+    "fv": "1.400–1.600",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+15%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+5%",
+      "score": 67,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PNLF",
+    "name": "Panin Financial",
+    "sector": "Insurance · Holding",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "530",
+    "change": "+0.95%",
+    "fv": "700–820",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+35%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+15%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+4%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BBHI",
+    "name": "Allo Bank Indonesia",
+    "sector": "Perbankan · Digital",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "1.580",
+    "change": "+1.93%",
+    "fv": "2.200–2.600",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 42,
+      "neg": 30,
+      "ev": "+38%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+18%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 30,
+      "ev": "+4%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BNGA",
+    "name": "Bank CIMB Niaga",
+    "sector": "Perbankan",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "1.740",
+    "change": "+0.58%",
+    "fv": "2.200–2.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+28%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+12%",
+      "score": 69,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 23,
+      "ev": "+4%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BNII",
+    "name": "Bank Maybank Indonesia",
+    "sector": "Perbankan",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "250",
+    "change": "+0.40%",
+    "fv": "310–360",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 24,
+      "ev": "+10%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 27,
+      "ev": "+2%",
+      "score": 58,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BJTM",
+    "name": "Bank Pembangunan Daerah Jawa Timur",
+    "sector": "Perbankan · BPD",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "690",
+    "change": "+0.73%",
+    "fv": "860–980",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+30%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+14%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+5%",
+      "score": 67,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BSIM",
+    "name": "Sinarmas Multiartha",
+    "sector": "Keuangan · Holding",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "875",
+    "change": "+0.46%",
+    "fv": "1.100–1.250",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+28%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 26,
+      "ev": "+10%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 56,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "LPPS",
+    "name": "Lippo General Insurance",
+    "sector": "Insurance",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "1.850",
+    "change": "+0.54%",
+    "fv": "2.400–2.800",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+35%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 27,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MFIN",
+    "name": "Mandiri Utama Finance",
+    "sector": "Multifinance · BUMN",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "3.200",
+    "change": "+0.31%",
+    "fv": "3.900–4.400",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+28%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+10%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 25,
+      "ev": "+3.5%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MREI",
+    "name": "Maskapai Reasuransi Indonesia",
+    "sector": "Asuransi · Reasuransi",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "980",
+    "change": "+0.41%",
+    "fv": "1.200–1.400",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+28%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 24,
+      "ev": "+10%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BBMD",
+    "name": "Bank Mestika Dharma",
+    "sector": "Perbankan · Regional",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "3.450",
+    "change": "+0.29%",
+    "fv": "4.200–4.800",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 18,
+      "ev": "+30%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 20,
+      "ev": "+12%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 23,
+      "ev": "+3%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "NOBU",
+    "name": "Bank Nationalnobu",
+    "sector": "Perbankan · Mid",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "1.290",
+    "change": "+0.78%",
+    "fv": "1.600–1.850",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+30%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 26,
+      "ev": "+10%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+2%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BBYB",
+    "name": "Bank Neo Commerce",
+    "sector": "Perbankan · Digital",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "875",
+    "change": "+2.34%",
+    "fv": "1.200–1.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 40,
+      "neg": 32,
+      "ev": "+42%",
+      "score": 57,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 30,
+      "ev": "+18%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 32,
+      "ev": "+5%",
+      "score": 54,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "AMAG",
+    "name": "Asuransi Multi Artha Guna",
+    "sector": "Asuransi Umum",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "452",
+    "change": "+0.89%",
+    "fv": "560–640",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+30%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+10%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "VRNA",
+    "name": "Verbena Alam Santosa",
+    "sector": "Keuangan · Fintech",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "350",
+    "change": "+1.45%",
+    "fv": "450–550",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 38,
+      "neg": 34,
+      "ev": "+45%",
+      "score": 54,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 35,
+      "neg": 35,
+      "ev": "+15%",
+      "score": 50,
+      "stance": "uw"
+    },
+    "st": {
+      "prob": 32,
+      "neg": 36,
+      "ev": "+3%",
+      "score": 47,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "BBSS",
+    "name": "Bank Bisnis Internasional",
+    "sector": "Perbankan · Kecil",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "1.850",
+    "change": "+0.54%",
+    "fv": "2.300–2.700",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+28%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 27,
+      "ev": "+10%",
+      "score": 59,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+3%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "TRIM",
+    "name": "Trimegah Sekuritas",
+    "sector": "Sekuritas & Investasi",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "370",
+    "change": "+0.82%",
+    "fv": "480–560",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+38%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+14%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 27,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "KICI",
+    "name": "Kedaung Indah Can",
+    "sector": "Keuangan · Investasi",
+    "color": "banking",
+    "assetClass": "stocks",
+    "price": "575",
+    "change": "+0.88%",
+    "fv": "720–840",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+30%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+10%",
+      "score": 57,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 32,
+      "ev": "+2%",
+      "score": 52,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MIKA",
+    "name": "Mitra Keluarga Karyasehat",
+    "sector": "Healthcare · RS Swasta",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "2.920",
+    "change": "+0.35%",
+    "fv": "3.500–4.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+25%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+10%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+2%",
+      "score": 61,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SAME",
+    "name": "Sarana Meditama Metropolitan",
+    "sector": "Healthcare · RS",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "945",
+    "change": "+0.53%",
+    "fv": "1.200–1.380",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PRDA",
+    "name": "Prodia Widyahusada",
+    "sector": "Healthcare · Diagnostik",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "6.800",
+    "change": "+0.74%",
+    "fv": "8.500–9.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+30%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+14%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 23,
+      "ev": "+4%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SILO",
+    "name": "Siloam International Hospitals",
+    "sector": "Healthcare · RS",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "2.130",
+    "change": "+0.95%",
+    "fv": "2.700–3.100",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+30%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+14%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "HEAL",
+    "name": "Medikaloka Hermina",
+    "sector": "Healthcare · RS",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "1.330",
+    "change": "+0.76%",
+    "fv": "1.700–1.950",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+32%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+14%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BMHS",
+    "name": "Bundamedik Healthcare System",
+    "sector": "Healthcare · RS",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "460",
+    "change": "+1.10%",
+    "fv": "580–680",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+30%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 26,
+      "ev": "+12%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+3%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PTEN",
+    "name": "Pratama Abadi Nusa Industri",
+    "sector": "Healthcare · Farmasi",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "2.400",
+    "change": "+0.42%",
+    "fv": "3.000–3.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+28%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 26,
+      "ev": "+10%",
+      "score": 59,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 29,
+      "ev": "+2%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "INAF",
+    "name": "Indofarma",
+    "sector": "Farmasi · BUMN",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "188",
+    "change": "-0.53%",
+    "fv": "240–290",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 38,
+      "neg": 34,
+      "ev": "+20%",
+      "score": 52,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 35,
+      "neg": 36,
+      "ev": "+8%",
+      "score": 48,
+      "stance": "uw"
+    },
+    "st": {
+      "prob": 30,
+      "neg": 38,
+      "ev": "-2%",
+      "score": 44,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "PYFA",
+    "name": "Pyridam Farma",
+    "sector": "Farmasi · Generik",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "1.295",
+    "change": "+0.39%",
+    "fv": "1.600–1.850",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 24,
+      "ev": "+10%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 27,
+      "ev": "+2%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SOHO",
+    "name": "Soho Global Health",
+    "sector": "Farmasi · OTC",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "6.425",
+    "change": "+0.63%",
+    "fv": "8.000–9.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+32%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+14%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "TSPC",
+    "name": "Tempo Scan Pacific",
+    "sector": "Farmasi & OTC",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "1.570",
+    "change": "+0.64%",
+    "fv": "1.950–2.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+28%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+12%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MERK",
+    "name": "Merck Indonesia",
+    "sector": "Farmasi · Ethical",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "36.500",
+    "change": "+0.27%",
+    "fv": "44.000–50.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 18,
+      "ev": "+28%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 20,
+      "ev": "+12%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 23,
+      "ev": "+3%",
+      "score": 61,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SCPI",
+    "name": "Organon Pharma Indonesia",
+    "sector": "Farmasi · Ethical",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "20.500",
+    "change": "+0.24%",
+    "fv": "26.000–30.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+30%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 23,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 27,
+      "ev": "+2%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "LABS",
+    "name": "Laboratorium Indonesia (CheckUp)",
+    "sector": "Healthcare · Diagnostik",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "460",
+    "change": "+1.10%",
+    "fv": "580–680",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+35%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+3%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "IRRA",
+    "name": "Itama Ranoraya",
+    "sector": "Alat Kesehatan",
+    "color": "health",
+    "assetClass": "stocks",
+    "price": "840",
+    "change": "+0.60%",
+    "fv": "1.050–1.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+32%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 27,
+      "ev": "+3%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BISI",
+    "name": "BISI International",
+    "sector": "Agribisnis · Benih",
+    "color": "agri",
+    "assetClass": "stocks",
+    "price": "1.825",
+    "change": "+1.11%",
+    "fv": "2.300–2.600",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+28%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "JSMR",
+    "name": "Jasa Marga",
+    "sector": "Infrastruktur · Toll Road",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "3.760",
+    "change": "+0.27%",
+    "fv": "4.600–5.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+30%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+14%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 23,
+      "ev": "+4%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "WIKA",
+    "name": "Wijaya Karya",
+    "sector": "Konstruksi BUMN",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "695",
+    "change": "-0.71%",
+    "fv": "900–1.050",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 40,
+      "neg": 32,
+      "ev": "+20%",
+      "score": 57,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 38,
+      "neg": 34,
+      "ev": "+8%",
+      "score": 53,
+      "stance": "uw"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 35,
+      "ev": "-2%",
+      "score": 48,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "PTPP",
+    "name": "PP (Pembangunan Perumahan)",
+    "sector": "Konstruksi BUMN",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "780",
+    "change": "-0.51%",
+    "fv": "1.000–1.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 42,
+      "neg": 30,
+      "ev": "+22%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 40,
+      "neg": 30,
+      "ev": "+10%",
+      "score": 56,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+2%",
+      "score": 54,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "TOTL",
+    "name": "Total Bangun Persada",
+    "sector": "Konstruksi Swasta",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "490",
+    "change": "+0.41%",
+    "fv": "620–720",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+32%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 46,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BAPA",
+    "name": "Bekasi Fajar Industrial Estate",
+    "sector": "Properti · Kawasan Industri",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "415",
+    "change": "+0.72%",
+    "fv": "530–620",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+35%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+14%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 25,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "CTRA",
+    "name": "Ciputra Development",
+    "sector": "Properti · Residensial",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "1.040",
+    "change": "+0.48%",
+    "fv": "1.300–1.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+32%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+14%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PWON",
+    "name": "Pakuwon Jati",
+    "sector": "Properti · Mixed Use",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "440",
+    "change": "+0.46%",
+    "fv": "560–650",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+35%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+14%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SMRA",
+    "name": "Summarecon Agung",
+    "sector": "Properti · Kota Baru",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "595",
+    "change": "+0.34%",
+    "fv": "750–880",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+30%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 27,
+      "ev": "+3%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "DILD",
+    "name": "Intiland Development",
+    "sector": "Properti · Mixed Use",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "233",
+    "change": "+0.43%",
+    "fv": "290–340",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 27,
+      "ev": "+30%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 40,
+      "neg": 30,
+      "ev": "+10%",
+      "score": 56,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 33,
+      "ev": "+2%",
+      "score": 51,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "KIJA",
+    "name": "Kawasan Industri Jababeka",
+    "sector": "Properti · Kawasan Industri",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "165",
+    "change": "+0.61%",
+    "fv": "210–250",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 25,
+      "ev": "+38%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 27,
+      "ev": "+14%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 29,
+      "ev": "+3%",
+      "score": 56,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "NRCA",
+    "name": "Nusa Raya Cipta",
+    "sector": "Konstruksi Swasta",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "840",
+    "change": "+0.24%",
+    "fv": "1.050–1.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "APLN",
+    "name": "Agung Podomoro Land",
+    "sector": "Properti · Mixed Use",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "74",
+    "change": "+1.37%",
+    "fv": "95–115",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 35,
+      "neg": 38,
+      "ev": "+25%",
+      "score": 49,
+      "stance": "uw"
+    },
+    "mt": {
+      "prob": 32,
+      "neg": 40,
+      "ev": "+10%",
+      "score": 45,
+      "stance": "uw"
+    },
+    "st": {
+      "prob": 30,
+      "neg": 40,
+      "ev": "-5%",
+      "score": 42,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "BIRD",
+    "name": "Blue Bird",
+    "sector": "Transportasi · Taksi",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "1.545",
+    "change": "+0.65%",
+    "fv": "1.950–2.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 46,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "META",
+    "name": "Nusantara Infrastructure",
+    "sector": "Infrastruktur · Toll",
+    "color": "infra",
+    "assetClass": "stocks",
+    "price": "148",
+    "change": "+0.68%",
+    "fv": "190–220",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+35%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+12%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+3%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "LINK",
+    "name": "Link Net",
+    "sector": "Telko · Internet Fixed",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "3.250",
+    "change": "+0.62%",
+    "fv": "4.000–4.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+24%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+10%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+2%",
+      "score": 60,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "FREN",
+    "name": "Smartfren Telecom",
+    "sector": "Telko · Mobile",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "50",
+    "change": "+2.04%",
+    "fv": "65–80",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 38,
+      "neg": 34,
+      "ev": "+45%",
+      "score": 54,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 35,
+      "neg": 35,
+      "ev": "+15%",
+      "score": 50,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 32,
+      "neg": 36,
+      "ev": "+3%",
+      "score": 46,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "ISAT",
+    "name": "Indosat Ooredoo Hutchison",
+    "sector": "Telko · Mobile",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "2.780",
+    "change": "+0.72%",
+    "fv": "3.500–4.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+32%",
+      "score": 69,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+14%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 24,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "EMTK",
+    "name": "Elang Mahkota Teknologi",
+    "sector": "Media & Teknologi",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "495",
+    "change": "+0.41%",
+    "fv": "620–720",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+32%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 27,
+      "ev": "+12%",
+      "score": 59,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 29,
+      "ev": "+3%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "KOPI",
+    "name": "Kopi Kenangan Digital",
+    "sector": "Teknologi · F&B Tech",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "224",
+    "change": "+1.81%",
+    "fv": "290–350",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 38,
+      "neg": 34,
+      "ev": "+55%",
+      "score": 53,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 35,
+      "neg": 34,
+      "ev": "+18%",
+      "score": 50,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 32,
+      "neg": 35,
+      "ev": "+4%",
+      "score": 46,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "GOTO",
+    "name": "GoTo Gojek Tokopedia",
+    "sector": "Teknologi · Super App",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "63",
+    "change": "+1.61%",
+    "fv": "82–100",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 42,
+      "neg": 30,
+      "ev": "+50%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 40,
+      "neg": 30,
+      "ev": "+18%",
+      "score": 56,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+5%",
+      "score": 54,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BUKA",
+    "name": "Bukalapak.com",
+    "sector": "Teknologi · E-Commerce",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "113",
+    "change": "+0.89%",
+    "fv": "140–170",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 35,
+      "neg": 35,
+      "ev": "+35%",
+      "score": 50,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 33,
+      "neg": 36,
+      "ev": "+12%",
+      "score": 47,
+      "stance": "uw"
+    },
+    "st": {
+      "prob": 30,
+      "neg": 37,
+      "ev": "+3%",
+      "score": 44,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "DNET",
+    "name": "Indoritel Makmur Internasional",
+    "sector": "Teknologi · Ritel",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "1.700",
+    "change": "+0.59%",
+    "fv": "2.100–2.400",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+30%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 27,
+      "ev": "+3%",
+      "score": 57,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MTDL",
+    "name": "Metrodata Electronics",
+    "sector": "Teknologi · IT Distributor",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "725",
+    "change": "+0.69%",
+    "fv": "920–1.050",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+30%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 46,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "EDGE",
+    "name": "PT Edgewave Indonesia",
+    "sector": "Teknologi · Data Center",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "590",
+    "change": "+1.37%",
+    "fv": "750–880",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+40%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 46,
+      "neg": 24,
+      "ev": "+16%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 26,
+      "ev": "+5%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ENRG",
+    "name": "Energi Mega Persada",
+    "sector": "Energi · Oil & Gas",
+    "color": "energy",
+    "assetClass": "stocks",
+    "price": "105",
+    "change": "+0.96%",
+    "fv": "135–160",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 40,
+      "neg": 32,
+      "ev": "+35%",
+      "score": 56,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 38,
+      "neg": 32,
+      "ev": "+12%",
+      "score": 54,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 34,
+      "ev": "+3%",
+      "score": 51,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MLPL",
+    "name": "Multipolar",
+    "sector": "Teknologi · Holding",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "157",
+    "change": "+0.64%",
+    "fv": "200–235",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+35%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+12%",
+      "score": 57,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 32,
+      "ev": "+2%",
+      "score": 52,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "PTSN",
+    "name": "Sat Nusapersada",
+    "sector": "Elektronik · Manufaktur",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "188",
+    "change": "+1.08%",
+    "fv": "240–280",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+38%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 27,
+      "ev": "+14%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 29,
+      "ev": "+3%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ASSA",
+    "name": "Adi Sarana Armada",
+    "sector": "Transportasi · Logistik",
+    "color": "telco",
+    "assetClass": "stocks",
+    "price": "770",
+    "change": "+0.65%",
+    "fv": "980–1.100",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+32%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 46,
+      "neg": 24,
+      "ev": "+14%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+4%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "NCKL",
+    "name": "Trimegah Bangun Persada",
+    "sector": "Mining · Nickel HPAL",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "1.055",
+    "change": "+3.43%",
+    "fv": "1.500–1.800",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 42,
+      "neg": 32,
+      "ev": "+30%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 25,
+      "ev": "+18%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 55,
+      "neg": 22,
+      "ev": "+8%",
+      "score": 70,
+      "stance": "ow"
+    }
+  },
+  {
+    "ticker": "TAPG",
+    "name": "Triputra Agro Persada",
+    "sector": "CPO · Plantation",
+    "color": "agri",
+    "assetClass": "stocks",
+    "price": "1.520",
+    "change": "+1.33%",
+    "fv": "2.000–2.300",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+35%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+16%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+5%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "TINS",
+    "name": "Timah",
+    "sector": "Mining · Tin",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "1.055",
+    "change": "+0.96%",
+    "fv": "1.400–1.650",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+32%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+14%",
+      "score": 59,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 30,
+      "ev": "+3%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ITMG",
+    "name": "Indo Tambangraya Megah",
+    "sector": "Mining · Coal Thermal",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "26.275",
+    "change": "-0.85%",
+    "fv": "29.000–33.000",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 25,
+      "ev": "+18%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+12%",
+      "score": 68,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+4%",
+      "score": 68,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ADRO",
+    "name": "Adaro Energy Indonesia",
+    "sector": "Mining · Coal & Aluminium",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "2.350",
+    "change": "+0.43%",
+    "fv": "2.800–3.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+28%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 23,
+      "ev": "+12%",
+      "score": 66,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 25,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SGER",
+    "name": "Sumber Global Energy",
+    "sector": "Mining · Coal",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "178",
+    "change": "+1.71%",
+    "fv": "230–270",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 42,
+      "neg": 30,
+      "ev": "+38%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 38,
+      "neg": 32,
+      "ev": "+14%",
+      "score": 54,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 33,
+      "ev": "+4%",
+      "score": 51,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SMMT",
+    "name": "Golden Eagle Energy",
+    "sector": "Mining · Coal",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "2.200",
+    "change": "+0.92%",
+    "fv": "2.800–3.200",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+30%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 27,
+      "ev": "+12%",
+      "score": 59,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 29,
+      "ev": "+3%",
+      "score": 55,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "DOID",
+    "name": "Delta Dunia Makmur",
+    "sector": "Mining · Coal Contractor",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "478",
+    "change": "+1.49%",
+    "fv": "620–720",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+35%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+14%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 27,
+      "ev": "+4%",
+      "score": 58,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "GEMS",
+    "name": "Golden Energy Mines",
+    "sector": "Mining · Coal Thermal",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "4.650",
+    "change": "+0.54%",
+    "fv": "5.800–6.500",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+28%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 25,
+      "ev": "+4%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "BUMI",
+    "name": "Bumi Resources",
+    "sector": "Mining · Coal Large",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "78",
+    "change": "+2.63%",
+    "fv": "100–125",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 38,
+      "neg": 35,
+      "ev": "+35%",
+      "score": 53,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 35,
+      "neg": 36,
+      "ev": "+14%",
+      "score": 49,
+      "stance": "uw"
+    },
+    "st": {
+      "prob": 32,
+      "neg": 37,
+      "ev": "+4%",
+      "score": 45,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "MITI",
+    "name": "Mitra Investindo",
+    "sector": "Mining · Quarrying",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "196",
+    "change": "+1.04%",
+    "fv": "250–295",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 45,
+      "neg": 26,
+      "ev": "+35%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 27,
+      "ev": "+14%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 29,
+      "ev": "+4%",
+      "score": 54,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ELSA",
+    "name": "Elnusa",
+    "sector": "Energi · Oil Services",
+    "color": "energy",
+    "assetClass": "stocks",
+    "price": "418",
+    "change": "+0.72%",
+    "fv": "530–620",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 48,
+      "neg": 24,
+      "ev": "+35%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 44,
+      "neg": 25,
+      "ev": "+14%",
+      "score": 61,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+4%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MEDC",
+    "name": "Medco Energi Internasional",
+    "sector": "Energi · Oil & Gas",
+    "color": "energy",
+    "assetClass": "stocks",
+    "price": "1.005",
+    "change": "+0.50%",
+    "fv": "1.250–1.450",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+32%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 46,
+      "neg": 24,
+      "ev": "+12%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 26,
+      "ev": "+3%",
+      "score": 59,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MYOH",
+    "name": "Samindo Resources",
+    "sector": "Mining · Coal Contractor",
+    "color": "mining",
+    "assetClass": "stocks",
+    "price": "1.545",
+    "change": "+0.65%",
+    "fv": "2.000–2.300",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+40%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+18%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 44,
+      "neg": 23,
+      "ev": "+5%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "AKRA",
+    "name": "AKR Corporindo",
+    "sector": "Energi · Distribusi BBM",
+    "color": "energy",
+    "assetClass": "stocks",
+    "price": "1.620",
+    "change": "+0.62%",
+    "fv": "2.000–2.300",
+    "intlSector": null,
+    "region": null,
+    "isSmallCap": true,
+    "lt": {
+      "prob": 50,
+      "neg": 20,
+      "ev": "+30%",
+      "score": 67,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 46,
+      "neg": 22,
+      "ev": "+12%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 24,
+      "ev": "+3%",
+      "score": 60,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "TSM",
+    "name": "TSMC",
+    "sector": "Semikonductor · Taiwan",
+    "color": "tech",
+    "assetClass": "global",
+    "price": "USD 145",
+    "change": "+1.22%",
+    "fv": "USD 165–185",
+    "intlSector": "tech",
+    "region": "asean",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 68,
+      "neg": 15,
+      "ev": "+28%",
+      "score": 82,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 58,
+      "neg": 18,
+      "ev": "+15%",
+      "score": 74,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 22,
+      "ev": "+4%",
+      "score": 65,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "005930.KS",
+    "name": "Samsung Electronics",
+    "sector": "Elektronik · Korea",
+    "color": "tech",
+    "assetClass": "global",
+    "price": "USD 62",
+    "change": "+0.48%",
+    "fv": "USD 72–80",
+    "intlSector": "tech",
+    "region": "asean",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+22%",
+      "score": 71,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+10%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "ASML",
+    "name": "ASML Holding",
+    "sector": "Semicon Equipment · Belanda",
+    "color": "tech",
+    "assetClass": "global",
+    "price": "USD 790",
+    "change": "+0.85%",
+    "fv": "USD 900–1000",
+    "intlSector": "tech",
+    "region": "europe",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 72,
+      "neg": 12,
+      "ev": "+32%",
+      "score": 84,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 58,
+      "neg": 18,
+      "ev": "+14%",
+      "score": 75,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+4.5%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "MC.PA",
+    "name": "LVMH Moët Hennessy",
+    "sector": "Luxury · Perancis",
+    "color": "consumer",
+    "assetClass": "global",
+    "price": "USD 670",
+    "change": "+0.32%",
+    "fv": "USD 780–850",
+    "intlSector": "luxury",
+    "region": "europe",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 60,
+      "neg": 18,
+      "ev": "+25%",
+      "score": 75,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 20,
+      "ev": "+10%",
+      "score": 69,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 25,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "RMS.PA",
+    "name": "Hermès International",
+    "sector": "Ultra Luxury · Perancis",
+    "color": "consumer",
+    "assetClass": "global",
+    "price": "USD 2280",
+    "change": "+0.65%",
+    "fv": "USD 2600–2900",
+    "intlSector": "luxury",
+    "region": "europe",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 65,
+      "neg": 12,
+      "ev": "+30%",
+      "score": 80,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+12%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 22,
+      "ev": "+4%",
+      "score": 65,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SHEL",
+    "name": "Shell PLC",
+    "sector": "Energi · UK/Belanda",
+    "color": "energy",
+    "assetClass": "global",
+    "price": "USD 29",
+    "change": "+0.34%",
+    "fv": "USD 33–37",
+    "intlSector": "energy",
+    "region": "europe",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 52,
+      "neg": 22,
+      "ev": "+20%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 50,
+      "neg": 22,
+      "ev": "+8%",
+      "score": 67,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 24,
+      "ev": "+3%",
+      "score": 64,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "NESN.SW",
+    "name": "Nestlé S.A.",
+    "sector": "Consumer Staples · Swiss",
+    "color": "consumer",
+    "assetClass": "global",
+    "price": "USD 83",
+    "change": "-0.22%",
+    "fv": "USD 95–105",
+    "intlSector": "consumer",
+    "region": "europe",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+20%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 22,
+      "ev": "+6%",
+      "score": 63,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 38,
+      "neg": 28,
+      "ev": "+1.5%",
+      "score": 58,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "7203.T",
+    "name": "Toyota Motor Corp.",
+    "sector": "Otomotif · Jepang",
+    "color": "auto",
+    "assetClass": "global",
+    "price": "USD 182",
+    "change": "+0.55%",
+    "fv": "USD 210–230",
+    "intlSector": "industrial",
+    "region": "japan",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 20,
+      "ev": "+22%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 22,
+      "ev": "+8%",
+      "score": 65,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 42,
+      "neg": 25,
+      "ev": "+3%",
+      "score": 62,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SAP",
+    "name": "SAP SE",
+    "sector": "Enterprise Software · Jerman",
+    "color": "tech",
+    "assetClass": "global",
+    "price": "USD 248",
+    "change": "+1.45%",
+    "fv": "USD 280–320",
+    "intlSector": "tech",
+    "region": "europe",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 65,
+      "neg": 15,
+      "ev": "+28%",
+      "score": 80,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+12%",
+      "score": 72,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 20,
+      "ev": "+4%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "2318.HK",
+    "name": "Ping An Insurance",
+    "sector": "Asuransi & Fintech · China",
+    "color": "banking",
+    "assetClass": "global",
+    "price": "USD 44",
+    "change": "-0.45%",
+    "fv": "USD 52–60",
+    "intlSector": "finance",
+    "region": "china",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 48,
+      "neg": 28,
+      "ev": "+18%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 30,
+      "ev": "+8%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 35,
+      "neg": 35,
+      "ev": "+2%",
+      "score": 52,
+      "stance": "uw"
+    }
+  },
+  {
+    "ticker": "BABA",
+    "name": "Alibaba Group",
+    "sector": "E-Commerce & Cloud · China",
+    "color": "tech",
+    "assetClass": "global",
+    "price": "USD 88",
+    "change": "+0.92%",
+    "fv": "USD 105–125",
+    "intlSector": "tech",
+    "region": "china",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 52,
+      "neg": 28,
+      "ev": "+22%",
+      "score": 68,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 45,
+      "neg": 28,
+      "ev": "+10%",
+      "score": 62,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 30,
+      "ev": "+4%",
+      "score": 58,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "NVO",
+    "name": "Novo Nordisk A/S",
+    "sector": "Pharmaceutical · Denmark",
+    "color": "health",
+    "assetClass": "global",
+    "price": "USD 100",
+    "change": "+0.78%",
+    "fv": "USD 120–145",
+    "intlSector": "health",
+    "region": "europe",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 65,
+      "neg": 15,
+      "ev": "+35%",
+      "score": 80,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 55,
+      "neg": 18,
+      "ev": "+15%",
+      "score": 73,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 48,
+      "neg": 20,
+      "ev": "+5%",
+      "score": 66,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "DBS.SI",
+    "name": "DBS Group Holdings",
+    "sector": "Perbankan · Singapura",
+    "color": "banking",
+    "assetClass": "global",
+    "price": "USD 38",
+    "change": "+0.25%",
+    "fv": "USD 44–50",
+    "intlSector": "finance",
+    "region": "asean",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 60,
+      "neg": 15,
+      "ev": "+25%",
+      "score": 75,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 52,
+      "neg": 18,
+      "ev": "+9%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 20,
+      "ev": "+3.5%",
+      "score": 65,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "SE",
+    "name": "Sea Limited",
+    "sector": "E-Commerce & Digital · SEA",
+    "color": "tech",
+    "assetClass": "global",
+    "price": "USD 110",
+    "change": "+1.85%",
+    "fv": "USD 130–155",
+    "intlSector": "tech",
+    "region": "asean",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 55,
+      "neg": 25,
+      "ev": "+30%",
+      "score": 70,
+      "stance": "ow"
+    },
+    "mt": {
+      "prob": 48,
+      "neg": 25,
+      "ev": "+12%",
+      "score": 64,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 45,
+      "neg": 25,
+      "ev": "+5%",
+      "score": 63,
+      "stance": "nt"
+    }
+  },
+  {
+    "ticker": "GRAB",
+    "name": "Grab Holdings",
+    "sector": "Super App · SEA",
+    "color": "tech",
+    "assetClass": "global",
+    "price": "USD 4.2",
+    "change": "+2.44%",
+    "fv": "USD 5.5–7.0",
+    "intlSector": "tech",
+    "region": "asean",
+    "isSmallCap": false,
+    "lt": {
+      "prob": 48,
+      "neg": 30,
+      "ev": "+35%",
+      "score": 60,
+      "stance": "nt"
+    },
+    "mt": {
+      "prob": 42,
+      "neg": 28,
+      "ev": "+12%",
+      "score": 58,
+      "stance": "nt"
+    },
+    "st": {
+      "prob": 40,
+      "neg": 28,
+      "ev": "+4%",
+      "score": 56,
+      "stance": "nt"
+    }
+  }
+]
