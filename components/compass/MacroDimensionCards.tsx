@@ -88,29 +88,43 @@ function metricValueColor(t: Trend, label: string) {
   return "text-grove-text";
 }
 
-export function MacroDimensionCards() {
+export function MacroDimensionCards({
+  onOpen,
+}: {
+  onOpen?: (idx: number) => void;
+}) {
   const [active, setActive] = useState<number | null>(null);
   return (
     <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
       {macroDimensions.map((item, i) => (
         <article
           key={item.title}
-          onClick={() => setActive(active === i ? null : i)}
+          onClick={() => {
+            setActive(active === i ? null : i);
+            if (onOpen) onOpen(i);
+          }}
           className="cursor-pointer rounded-[10px] border border-grove-border bg-grove-bg2 p-4 transition hover:border-grove-border2"
         >
           <p className="mb-2 text-[9px] font-semibold uppercase tracking-[.1em] text-grove-muted">
             {item.title}
           </p>
-          <p className={`mb-0.5 font-serif text-[28px] font-bold leading-none ${scoreColor(item.score)}`}>
+          <p
+            className={`mb-0.5 font-serif text-[28px] font-bold leading-none ${scoreColor(item.score)}`}
+          >
             {item.score}
-            <span className="ml-0.5 text-[11px] font-normal text-grove-muted">/100</span>
+            <span className="ml-0.5 text-[11px] font-normal text-grove-muted">
+              /100
+            </span>
           </p>
           <div className="mb-3 mt-3 space-y-1.5">
             {item.metrics.map((m) => (
               <div key={m.label} className="flex items-center justify-between">
                 <span className="text-[10px] text-grove-muted">{m.label}</span>
-                <span className={`text-[10px] font-mono font-semibold ${metricValueColor(m.trend, m.label)}`}>
-                  {m.value}<TrendIcon t={m.trend} />
+                <span
+                  className={`text-[10px] font-mono font-semibold ${metricValueColor(m.trend, m.label)}`}
+                >
+                  {m.value}
+                  <TrendIcon t={m.trend} />
                 </span>
               </div>
             ))}
