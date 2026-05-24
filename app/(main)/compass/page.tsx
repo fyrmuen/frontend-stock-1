@@ -11,33 +11,48 @@ import { YTMCalculator } from "@/components/compass/YTMCalculator";
 function MacroScoreCard() {
   const score = 72;
   const zones = [
-    { label: "0–34 Risk Off", pct: 34, color: "#e05c5c" },
-    { label: "35–49 Kautius", pct: 15, color: "#e8a84c" },
-    { label: "50–64 Netral", pct: 15, color: "#9ab0a2" },
-    { label: "65–79 Konstruktif", pct: 15, color: "#4ecb8d" },
-    { label: "80–100 Risk On", pct: 21, color: "#1a7a4a" },
+    {
+      label: "0–34 Risk Off",
+      flex: 0.34,
+      color: "rgba(217,96,96,0.3)",
+      rounded: "rounded-l-[3px]",
+    },
+    { label: "35–49 Kautius", flex: 0.15, color: "rgba(224,164,68,0.3)" },
+    { label: "50–64 Netral", flex: 0.15, color: "rgba(151,160,148,0.3)" },
+    {
+      label: "65–79 Konstruktif",
+      flex: 0.15,
+      color: "rgba(95,184,138,0.7)",
+      marker: true,
+    },
+    {
+      label: "80–100 Risk On",
+      flex: 0.21,
+      color: "rgba(127,209,163,0.3)",
+      rounded: "rounded-r-[3px]",
+    },
   ];
 
   return (
-    <div className="mb-6 rounded-[12px] border border-grove-border bg-grove-bg2 p-6">
-      <div className="flex gap-8">
+    <div className="mb-6 rounded-[12px] border border-[rgba(95,184,138,0.3)] bg-[linear-gradient(135deg,rgba(95,184,138,0.08),var(--bg2))] p-7">
+      <div className="grid items-center gap-8 md:grid-cols-[auto_1fr]">
         {/* Score left */}
-        <div className="shrink-0">
-          <p className="mb-2 text-[9px] font-bold uppercase tracking-[.12em] text-grove-muted">
+        <div className="text-center md:border-r md:border-grove-border md:pr-6">
+          <p className="mb-2 text-[10px] font-medium uppercase tracking-[.15em] text-grove-muted">
             Macro Score
           </p>
-          <p className="font-serif text-[64px] font-bold leading-none text-[#4ecb8d]">
+          <p className="font-serif text-[68px] font-medium leading-none tracking-[-0.03em] text-[#4ecb8d]">
             {score}
           </p>
-          <p className="mb-3 text-[10px] text-grove-muted">/ 100</p>
-          <span className="inline-block rounded-[6px] border border-[#4ecb8d] px-3 py-1 text-[9px] font-bold uppercase tracking-[.1em] text-[#4ecb8d]">
+          <p className="mt-1 text-[10px] text-grove-muted">/ 100</p>
+          <span className="mt-2 inline-block rounded-full bg-[rgba(95,184,138,0.15)] px-3 py-1 text-[11px] font-medium uppercase tracking-[.05em] text-[#4ecb8d]">
             Konstruktif
           </span>
         </div>
 
         {/* Narrative right */}
-        <div className="flex-1">
-          <p className="mb-2 text-[16px] font-bold leading-[1.4] text-grove-text">
+        <div>
+          <p className="mb-3 font-serif text-[19px] font-normal leading-[1.4] text-grove-text">
             Fed & BI keduanya dalam{" "}
             <em className="italic text-[#4ecb8d]">siklus penurunan rate</em>.
             Indonesia di sweet spot: GDP stabil, inflasi terkendali, likuiditas
@@ -52,20 +67,25 @@ function MacroScoreCard() {
       </div>
 
       {/* Gauge bar */}
-      <div className="mt-6">
-        <div className="flex h-[6px] w-full overflow-hidden rounded-full">
+      <div className="mt-6 border-t border-grove-border pt-5">
+        <div className="mb-2 flex gap-1.5">
           {zones.map((z) => (
             <div
               key={z.label}
-              style={{ width: `${z.pct}%`, backgroundColor: z.color }}
-            />
+              className={`relative h-[6px] ${z.rounded ?? ""}`}
+              style={{ flex: z.flex, backgroundColor: z.color }}
+            >
+              {z.marker ? (
+                <span className="absolute left-[80%] top-[-10px] h-[26px] w-[2px] -translate-x-1/2 bg-[var(--grove-bright,#7FD1A3)]" />
+              ) : null}
+            </div>
           ))}
         </div>
-        <div className="mt-2 flex justify-between text-[9px] text-grove-muted">
+        <div className="flex justify-between text-[9px] tracking-[.05em] text-grove-muted">
           {zones.map((z, i) => (
             <span
               key={z.label}
-              className={i === 3 ? "font-bold text-[#4ecb8d]" : ""}
+              className={i === 3 ? "font-medium text-[#4ecb8d]" : ""}
             >
               {z.label}
               {i === 3 ? " ●" : ""}
@@ -211,30 +231,30 @@ export default function CompassPage() {
   return (
     <main className="container-shell py-10 animate-fadeUp">
       {/* ── Hero ── */}
-      <header className="mb-12 text-center">
-        <h1 className="mb-3 font-serif text-[32px] font-bold">
+      <header className="mb-10 text-center">
+        <h1 className="mb-2 font-serif text-[28px] font-normal">
           Grove <em className="italic text-[#4ecb8d]">Compass</em>
         </h1>
         <p className="mx-auto max-w-[520px] text-[13px] leading-[1.75] text-grove-muted2">
           Peta arah pasar. Dari kondisi makro global, rotasi sektor IHSG, hingga
           strategi alokasi sesuai profil risikomu.
         </p>
-        <p className="mt-3 flex items-center justify-center gap-1.5 text-[10px] text-grove-muted">
-          <span className="inline-block h-1.5 w-1.5 rounded-full bg-[#4ecb8d]" />
+        <p className="mt-2 flex items-center justify-center gap-1.5 text-[11px] text-grove-muted">
+          <span className="inline-block h-[5px] w-[5px] rounded-full bg-[#4ecb8d]" />
           Update mingguan · Senin pagi · Apr 2026
         </p>
       </header>
 
       {/* ══ BLOK 1 · MACRO ══ */}
-      <div className="mb-2 flex items-center justify-between border-t border-grove-border pt-6">
-        <p className="text-[9px] font-bold uppercase tracking-[.16em] text-[#4ecb8d]">
+      <div className="mb-2 flex flex-wrap items-baseline justify-between gap-3 border-t border-grove-border pt-6">
+        <p className="text-[9px] font-medium uppercase tracking-[.2em] text-[#4ecb8d]">
           Blok 1 · Macro
         </p>
-        <p className="text-[10px] text-grove-muted">
+        <p className="text-[11px] text-grove-muted">
           Klik setiap indikator untuk narasi lengkap
         </p>
       </div>
-      <h2 className="mb-5 font-serif text-[22px] font-bold">
+      <h2 className="mb-5 font-serif text-[22px] font-normal tracking-[-0.01em]">
         Cuaca Makro — <em className="italic text-[#4ecb8d]">Apr 2026</em>
       </h2>
 
@@ -244,10 +264,10 @@ export default function CompassPage() {
       {macroDetailIndex !== null && (
         <div
           ref={panelRef}
-          className="mt-6 rounded-[12px] border border-grove-border bg-grove-bg2 overflow-hidden"
+          className="mt-4 rounded-[12px] border border-[rgba(95,184,138,0.3)] bg-grove-bg2 overflow-hidden"
         >
           <div className="flex items-center justify-between border-b border-grove-border p-4">
-            <h3 className="font-serif text-[18px] font-medium">
+            <h3 className="font-serif text-[18px] font-normal tracking-[-0.01em]">
               {macroDetailsData[macroDetailIndex].title}
             </h3>
             <button
@@ -259,11 +279,11 @@ export default function CompassPage() {
           </div>
           <div className="p-6 space-y-6">
             <div>
-              <div className="mb-2 text-[12px] font-semibold text-grove-muted">
+              <div className="mb-2 text-[10px] font-medium uppercase tracking-[0.12em] text-[#4ecb8d]">
                 Narasi &amp; Interpretasi
               </div>
               <div
-                className="prose max-w-none text-[13px] text-grove-muted2"
+                className="text-[13px] leading-[1.75] text-grove-text [&_em]:text-[#4ecb8d] [&_em]:italic"
                 dangerouslySetInnerHTML={{
                   __html: macroDetailsData[macroDetailIndex].narrative,
                 }}
@@ -271,12 +291,15 @@ export default function CompassPage() {
             </div>
 
             <div>
-              <div className="mb-2 text-[12px] font-semibold text-grove-muted">
+              <div className="mb-2 text-[10px] font-medium uppercase tracking-[0.12em] text-[#4ecb8d]">
                 Mengapa Skor Ini?
               </div>
-              <div className="rounded-[8px] border border-grove-border bg-grove-bg3 p-4">
+              <div className="rounded-[10px] border border-[rgba(95,184,138,0.2)] bg-[rgba(95,184,138,0.05)] p-4">
+                <div className="mb-2 text-[9px] font-semibold uppercase tracking-[0.15em] text-[#4ecb8d]">
+                  Reasoning Tim Riset Grove
+                </div>
                 <div
-                  className="text-[13px] text-grove-muted2"
+                  className="text-[12px] leading-[1.7] text-[#b6bdb2]"
                   dangerouslySetInnerHTML={{
                     __html: macroDetailsData[macroDetailIndex].why,
                   }}
@@ -285,20 +308,22 @@ export default function CompassPage() {
             </div>
 
             <div>
-              <div className="mb-3 text-[12px] font-semibold text-grove-muted">
+              <div className="mb-3 text-[10px] font-medium uppercase tracking-[0.12em] text-[#4ecb8d]">
                 Berita &amp; Data Pendukung
               </div>
-              <div className="grid gap-3 sm:grid-cols-1 md:grid-cols-2">
+              <div className="space-y-2">
                 {macroDetailsData[macroDetailIndex].news.map((n, idx) => (
                   <div
                     key={idx}
-                    className="rounded-[8px] border border-grove-border bg-grove-bg3 p-3"
+                    className="rounded-[8px] border-l-2 border-[#4ecb8d] bg-grove-bg3 px-3 py-2"
                   >
-                    <div className="text-[10px] text-grove-muted">{n.date}</div>
-                    <div className="mt-1 text-[13px] font-semibold text-grove-text">
+                    <div className="text-[9px] font-medium uppercase tracking-[0.08em] text-[#4ecb8d]">
+                      {n.date}
+                    </div>
+                    <div className="mt-1 text-[12px] font-medium leading-[1.45] text-grove-text">
                       {n.title}
                     </div>
-                    <div className="mt-1 text-[11px] text-grove-muted">
+                    <div className="mt-1 text-[10px] text-grove-muted">
                       Sumber: {n.source}
                     </div>
                   </div>
@@ -311,25 +336,25 @@ export default function CompassPage() {
 
       {/* ══ BLOK 2 · ROTATION ══ */}
       <div className="mb-2 border-t border-grove-border pt-8">
-        <p className="text-[9px] font-bold uppercase tracking-[.16em] text-[#4ecb8d]">
+        <p className="text-[9px] font-medium uppercase tracking-[.2em] text-[#4ecb8d]">
           Blok 2 · Rotation
         </p>
       </div>
-      <h2 className="mb-5 font-serif text-[22px] font-bold">
+      <h2 className="mb-5 font-serif text-[22px] font-normal tracking-[-0.01em]">
         Rotasi Aset & <em className="italic">Sektor IHSG</em>
       </h2>
 
       {/* Asset class rotation */}
-      <div className="mb-4 rounded-[12px] border border-grove-border bg-grove-bg2 p-5">
-        <p className="mb-4 text-[9px] font-bold uppercase tracking-[.14em] text-grove-muted">
+      <div className="mb-4 rounded-[12px] border border-grove-border bg-grove-bg2 px-7 py-6">
+        <p className="mb-4 text-[10px] font-medium uppercase tracking-[.12em] text-grove-muted">
           Alokasi Antar Kelas Aset
         </p>
         <RotationCards />
       </div>
 
       {/* Sector IHSG */}
-      <div className="rounded-[12px] border border-grove-border bg-grove-bg2 p-5">
-        <p className="mb-4 text-[9px] font-bold uppercase tracking-[.14em] text-grove-muted">
+      <div className="rounded-[12px] border border-grove-border bg-grove-bg2 px-7 py-6">
+        <p className="mb-4 text-[10px] font-medium uppercase tracking-[.12em] text-grove-muted">
           Sektor IHSG — Urut dari Terkuat
         </p>
         <SectorCards />
@@ -337,11 +362,11 @@ export default function CompassPage() {
 
       {/* ══ BLOK 3 · PORTFOLIO ══ */}
       <div className="mb-2 mt-10 border-t border-grove-border pt-8">
-        <p className="text-[9px] font-bold uppercase tracking-[.16em] text-[#4ecb8d]">
+        <p className="text-[9px] font-medium uppercase tracking-[.2em] text-[#4ecb8d]">
           Blok 3 · Portfolio
         </p>
       </div>
-      <h2 className="mb-1 font-serif text-[22px] font-bold">
+      <h2 className="mb-1 font-serif text-[22px] font-normal tracking-[-0.01em]">
         Strategi Portofolio — <em className="italic">Sesuai Profil Risiko</em>
       </h2>
       <p className="mb-5 text-[12.5px] leading-[1.7] text-grove-muted2">
