@@ -2,6 +2,10 @@ export type RatingStatus = "OW+" | "OW" | "NT" | "UW" | "UW-";
 
 export type AssetTab = "indonesia" | "us" | "global" | "bonds" | "mmf";
 
+export type ResearchAssetClass = "stocks" | "us" | "global" | "bonds" | "mmf";
+export type ResearchHorizon = "lt" | "mt" | "st";
+export type ResearchStance = "ow" | "nt" | "uw";
+
 export type Horizon = "long" | "medium" | "short";
 
 export interface NavLink {
@@ -18,6 +22,31 @@ export interface SummaryStock {
   score: number;
   status: RatingStatus;
   sector: string;
+}
+
+export interface ResearchHorizonData {
+  prob: number;
+  neg: number;
+  ev: string;
+  score: number;
+  stance: ResearchStance;
+}
+
+export interface ResearchAsset {
+  ticker: string;
+  name: string;
+  sector: string;
+  color: string;
+  assetClass: ResearchAssetClass;
+  price: string;
+  change: string;
+  fv: string;
+  intlSector?: string | null;
+  region?: string | null;
+  isSmallCap?: boolean;
+  lt: ResearchHorizonData;
+  mt: ResearchHorizonData;
+  st: ResearchHorizonData;
 }
 
 export interface ReportTag {

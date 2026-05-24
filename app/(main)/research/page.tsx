@@ -1,61 +1,147 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AssetTab } from "@/lib/types";
-import { HorizonTab, HorizonTabs } from "@/components/research/Horizontabs";
-import { summaryStocks } from "@/data/mockData";
+import { AssetTab, ResearchAssetClass, ResearchHorizon } from "@/lib/types";
+import { researchAssets } from "@/data/researchData";
 import { DashboardHeader } from "@/components/research/DashboardHeader";
 import { AssetClassTabs } from "@/components/research/AssetClassTabs";
 import { SummaryCards } from "@/components/research/SummaryCards";
 import { SectorFilter } from "@/components/research/SectorFilter";
+import { HorizonTabs } from "@/components/research/Horizontabs";
 import { StockTable } from "@/components/research/StockTable";
+import {
+  GLOBAL_FILTER_OPTIONS,
+  STOCK_SECTOR_OPTIONS,
+  US_SECTOR_OPTIONS,
+  getGlobalRegionGroup,
+  getGlobalSectorGroup,
+  getSectorGroup,
+  getUSSectorGroup,
+} from "@/lib/research-utils";
 
-const horizonLabel: Record<HorizonTab, string> = {
-  long: "Long Term",
-  medium: "Medium Term",
-  short: "Short Term",
+const assetClassMap: Record<AssetTab, ResearchAssetClass> = {
+  indonesia: "stocks",
+  us: "us",
+  global: "global",
+  bonds: "bonds",
+  mmf: "mmf",
+};
+
+const horizonLabel: Record<ResearchHorizon, string> = {
+  lt: "Long Term",
+  mt: "Medium Term",
+  st: "Short Term",
 };
 
 export default function ResearchPage() {
   const [assetTab, setAssetTab] = useState<AssetTab>("indonesia");
-  const [sector, setSector] = useState("Semua sektor");
-  const [horizon, setHorizon] = useState<HorizonTab>("long");
+  const [horizon, setHorizon] = useState<ResearchHorizon>("lt");
+  const [stockSector, setStockSector] = useState("all");
+  const [usSector, setUsSector] = useState("all");
+  const [globalFilter, setGlobalFilter] = useState("all");
 
-  const rows = useMemo(
+  const assetClass = assetClassMap[assetTab];
+
+  const filteredAssets = useMemo(() => {
+    let assets = researchAssets.filter(
+      (asset) => asset.assetClass === assetClass,
+    );
+
+    if (assetClass === "stocks" && stockSector !== "all") {
+      if (stockSector === "smallcap") {
+        assets = assets.filter((asset) => asset.isSmallCap === true);
+      } else {
+        assets = assets.filter(
+          (asset) => getSectorGroup(asset) === stockSector,
+        );
+      }
+    }
+
+    if (assetClass === "us" && usSector !== "all") {
+      assets = assets.filter((asset) => getUSSectorGroup(asset) === usSector);
+    }
+
+    if (assetClass === "global" && globalFilter !== "all") {
+      const regionKeys = new Set(["europe", "japan", "china", "asean"]);
+      if (regionKeys.has(globalFilter)) {
+        assets = assets.filter(
+          (asset) => getGlobalRegionGroup(asset) === globalFilter,
+        );
+      } else {
+        assets = assets.filter(
+          (asset) => getGlobalSectorGroup(asset) === globalFilter,
+        );
+      }
+    }
+
+    return assets;
+  }, [assetClass, globalFilter, stockSector, usSector]);
+
+  const sortedRows = useMemo(
     () =>
-      summaryStocks.filter((item) =>
-        sector === "Semua sektor"
-          ? true
-          : item.sector?.toLowerCase() === sector.toLowerCase()
-      ),
-    [sector]
+      [...filteredAssets].sort((a, b) => b[horizon].score - a[horizon].score),
+    [filteredAssets, horizon],
   );
+
+  const tableLabel = useMemo(() => {
+    if (assetClass === "stocks") {
+      return `Ranking ${horizonLabel[horizon]} — GROVE Score (G·R·O·V·E breakdown)`;
+    }
+    if (assetClass === "us") {
+      return `Saham Amerika — ${horizonLabel[horizon]}`;
+    }
+    if (assetClass === "global") {
+      return `Saham Global — ${horizonLabel[horizon]}`;
+    }
+    if (assetClass === "bonds") {
+      return `Obligasi — ${horizonLabel[horizon]}`;
+    }
+    return `Reksadana, MMF & ETF — ${horizonLabel[horizon]}`;
+  }, [assetClass, horizon]);
 
   return (
     <main className="container-shell py-7 animate-fadeUp">
-      {/* 1. Header */}
       <DashboardHeader />
 
-      {/* 2. Asset class tabs */}
       <AssetClassTabs value={assetTab} onChange={setAssetTab} />
 
-      {/* 3. Summary cards — top 3 per horizon */}
-      <SummaryCards />
+      <SummaryCards assets={filteredAssets} />
 
-      {/* 4. Sector filter */}
-      <SectorFilter value={sector} onChange={setSector} />
+      {assetClass === "stocks" && (
+        <SectorFilter
+          label="Filter sektor"
+          value={stockSector}
+          options={STOCK_SECTOR_OPTIONS}
+          onChange={setStockSector}
+        />
+      )}
 
-      {/* 5. Horizon tabs */}
+      {assetClass === "us" && (
+        <SectorFilter
+          label="Filter sektor"
+          value={usSector}
+          options={US_SECTOR_OPTIONS}
+          onChange={setUsSector}
+        />
+      )}
+
+      {assetClass === "global" && (
+        <SectorFilter
+          label="Filter sektor / region"
+          value={globalFilter}
+          options={GLOBAL_FILTER_OPTIONS}
+          onChange={setGlobalFilter}
+        />
+      )}
+
       <HorizonTabs value={horizon} onChange={setHorizon} />
 
-      {/* 6. Table label */}
-      <p className="mb-3 flex items-center gap-2 text-[9.5px] font-bold uppercase tracking-[.1em] text-grove-muted">
-        Ranking {horizonLabel[horizon]} — Grove Score (G·R·O·V·E Breakdown)
+      <p className="mb-3 flex items-center gap-2 text-[9.5px] font-medium uppercase tracking-[.1em] text-grove-muted">
+        {tableLabel}
         <span className="flex-1 border-t border-grove-border" />
       </p>
 
-      {/* 7. Stock table */}
-      <StockTable rows={rows} />
+      <StockTable rows={sortedRows} assetClass={assetClass} horizon={horizon} />
     </main>
   );
 }

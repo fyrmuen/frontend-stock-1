@@ -76,46 +76,87 @@ function scoreColor(s: number) {
 }
 
 function TrendIcon({ t }: { t: Trend }) {
-  if (t === "up") return <span className="text-[#4ecb8d]"> ↑</span>;
-  if (t === "down") return <span className="text-[#9ab0a2]"> ↓</span>;
-  return <span className="text-[#9ab0a2]"> ●</span>;
+  if (t === "up") return <span className="text-current"> ↑</span>;
+  if (t === "down") return <span className="text-current"> ↓</span>;
+  return <span className="text-current"> ●</span>;
 }
 
 function metricValueColor(t: Trend, label: string) {
   if (label === "Deficit") return "text-[#e8a84c]";
+  if (
+    [
+      "Fed Funds",
+      "DXY",
+      "BI Rate",
+      "Cadev",
+      "PMI",
+      "CPI YoY",
+      "IHSG YTD",
+      "Foreign Flow",
+    ].includes(label)
+  ) {
+    return "text-[#4ecb8d]";
+  }
   if (t === "up") return "text-[#4ecb8d]";
-  if (t === "down") return "text-[#9ab0a2]";
+  if (t === "down") return "text-grove-text";
   return "text-grove-text";
 }
 
-export function MacroDimensionCards() {
+export function MacroDimensionCards({
+  onOpen,
+}: {
+  onOpen?: (idx: number) => void;
+}) {
   const [active, setActive] = useState<number | null>(null);
   return (
-    <div className="mb-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+    <div className="macro-dim-grid mb-6 grid gap-2 [grid-template-columns:repeat(1,minmax(0,1fr))] sm:[grid-template-columns:repeat(2,minmax(0,1fr))] md:[grid-template-columns:repeat(3,minmax(0,1fr))] lg:[grid-template-columns:repeat(5,minmax(0,1fr))]">
       {macroDimensions.map((item, i) => (
         <article
           key={item.title}
-          onClick={() => setActive(active === i ? null : i)}
-          className="cursor-pointer rounded-[10px] border border-grove-border bg-grove-bg2 p-4 transition hover:border-grove-border2"
+          onClick={() => {
+            setActive(active === i ? null : i);
+            if (onOpen) onOpen(i);
+          }}
+          className={`macro-dim-card cursor-pointer rounded-[10px] border border-grove-border bg-grove-bg2 p-[14px] transition-all hover:border-[rgba(95,184,138,0.4)] hover:bg-grove-bg3 hover:-translate-y-[2px] ${
+            i === 4
+              ? "sm:col-span-2 md:col-span-2 md:col-start-2 lg:col-span-1 lg:col-start-auto"
+              : ""
+          }`}
         >
-          <p className="mb-2 text-[9px] font-semibold uppercase tracking-[.1em] text-grove-muted">
-            {item.title}
-          </p>
-          <p className={`mb-0.5 font-serif text-[28px] font-bold leading-none ${scoreColor(item.score)}`}>
+          <div className="flex min-h-[32px] items-start justify-start">
+            <p className="text-[11px] font-medium leading-[1.35] tracking-[-0.005em] text-grove-text">
+              {item.title}
+            </p>
+          </div>
+          <p
+            className={`mb-2.5 font-serif text-[32px] font-medium leading-none tracking-[-0.02em] ${scoreColor(
+              item.score,
+            )}`}
+          >
             {item.score}
-            <span className="ml-0.5 text-[11px] font-normal text-grove-muted">/100</span>
+            <span className="ml-0.5 text-[11px] font-normal text-grove-muted">
+              /100
+            </span>
           </p>
-          <div className="mb-3 mt-3 space-y-1.5">
+          <div className="mb-2.5 mt-2.5 space-y-1 border-t border-grove-border pt-2.5">
             {item.metrics.map((m) => (
               <div key={m.label} className="flex items-center justify-between">
-                <span className="text-[10px] text-grove-muted">{m.label}</span>
-                <span className={`text-[10px] font-mono font-semibold ${metricValueColor(m.trend, m.label)}`}>
-                  {m.value}<TrendIcon t={m.trend} />
+                <span className="text-[10.5px] text-grove-muted2">
+                  {m.label}
+                </span>
+                <span
+                  className={`text-[10.5px] font-mono font-medium ${metricValueColor(
+                    m.trend,
+                    m.label,
+                  )}`}
+                >
+                  {m.value}
+                  <TrendIcon t={m.trend} />
                 </span>
               </div>
             ))}
           </div>
-          <p className="text-[9.5px] text-grove-muted transition hover:text-grove-primary">
+          <p className="mt-auto pt-2 text-[9px] tracking-[0.05em] text-[#4ecb8d] opacity-80">
             Klik untuk narasi & berita →
           </p>
         </article>

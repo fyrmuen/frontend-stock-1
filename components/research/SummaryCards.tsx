@@ -1,55 +1,70 @@
-import { summaryStocks } from "@/data/mockData";
+import { ResearchAsset, ResearchHorizon } from "@/lib/types";
+import { COLOR_MAP, scoreColor } from "@/lib/research-utils";
 
-const horizons = [
-  { key: "long", label: "Long Term · 1–3 Thn · Top 3 Grove Score" },
-  { key: "medium", label: "Medium Term · 3–12 Bln · Top 3 Grove Score" },
-  { key: "short", label: "Short Term · 1–8 Mgg · Top 3 Grove Score" },
+const horizons: Array<{ key: ResearchHorizon; label: string }> = [
+  { key: "lt", label: "Long Term · 1–3 Thn" },
+  { key: "mt", label: "Medium Term · 3–12 Bln" },
+  { key: "st", label: "Short Term · 1–8 Mgg" },
 ];
 
-// Rank badge bg: rank1=teal, rank2=blue-ish teal, rank3=dark teal/olive
-const rankBg = ["bg-[#2d6a4f]", "bg-[#1d4e6b]", "bg-[#5c4a1e]"];
+export function SummaryCards({ assets }: { assets: ResearchAsset[] }) {
+  if (assets.length === 0) {
+    return (
+      <section className="mb-6 grid">
+        <article className="rounded-[10px] border border-grove-border bg-grove-bg2 px-4 py-6 text-center">
+          <p className="text-[10px] font-medium uppercase tracking-[.1em] text-grove-muted">
+            Tidak ada emiten di sektor ini
+          </p>
+        </article>
+      </section>
+    );
+  }
 
-export function SummaryCards() {
   return (
-    <section className="mb-4 grid gap-3 min-[761px]:grid-cols-3">
-      {horizons.map((horizon, hIdx) => {
-        const stocks = summaryStocks.slice(hIdx * 3, hIdx * 3 + 3);
+    <section className="mb-6 grid gap-3 min-[761px]:grid-cols-3">
+      {horizons.map((horizon) => {
+        const top = [...assets]
+          .sort((a, b) => b[horizon.key].score - a[horizon.key].score)
+          .slice(0, 3);
+
         return (
           <article
             key={horizon.key}
-            className="rounded-[10px] border border-grove-border bg-grove-bg2 px-5 py-4"
+            className="rounded-[10px] border border-grove-border bg-grove-bg2 px-4 py-3.5"
           >
-            {/* Header */}
-            <p className="mb-3 border-b border-grove-border pb-2.5 text-[8.5px] font-semibold uppercase tracking-[.12em] text-grove-muted">
-              {horizon.label}
+            <p className="mb-2.5 border-b border-grove-border pb-2 text-[9px] font-medium uppercase tracking-[.1em] text-grove-muted">
+              {horizon.label} · Top 3 GROVE Score
             </p>
 
-            {/* Stock rows */}
-            <div className="space-y-3">
-              {stocks.map((item, i) => {
-                const rank = i + 1;
+            <div>
+              {top.map((item, idx) => {
+                const color = COLOR_MAP[item.color] || "#5FB88A";
                 return (
-                  <div key={item.ticker} className="flex items-center gap-3">
-                    {/* Rank badge — square teal rounded */}
-                    <span
-                      className={`flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-[6px] text-[10px] font-bold text-[#4ecb8d] ${rankBg[i]} bg-opacity-60`}
-                    >
-                      {rank}
-                    </span>
-
-                    {/* Name + subname */}
-                    <div className="min-w-0 flex-1">
-                      <p className="text-[12.5px] font-bold leading-tight text-grove-text">
-                        {item.ticker}
-                      </p>
-                      <p className="truncate text-[10px] leading-tight text-grove-muted">
-                        {item.name}
-                      </p>
+                  <div
+                    key={item.ticker}
+                    className={`flex items-center justify-between py-1.5 ${idx === 0 ? "" : "border-t border-[rgba(255,255,255,0.03)]"}`}
+                  >
+                    <div className="flex items-center gap-2.5">
+                      <div
+                        className="flex h-[30px] w-[30px] items-center justify-center rounded-[7px] text-[9px] font-semibold"
+                        style={{ backgroundColor: `${color}22`, color }}
+                      >
+                        {idx + 1}
+                      </div>
+                      <div>
+                        <div className="text-[12px] font-medium text-grove-text">
+                          {item.ticker}
+                        </div>
+                        <div className="text-[9.5px] text-grove-muted">
+                          {item.name}
+                        </div>
+                      </div>
                     </div>
-
-                    {/* Score */}
-                    <span className="text-[16px] font-bold text-grove-amber">
-                      {item.score}
+                    <span
+                      className="text-[14px] font-medium"
+                      style={{ color: scoreColor(item[horizon.key].score) }}
+                    >
+                      {item[horizon.key].score}
                     </span>
                   </div>
                 );
