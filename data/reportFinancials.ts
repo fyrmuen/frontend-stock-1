@@ -1,3 +1,11 @@
+import {
+  buildFallbackFinancials,
+  buildSmallCapFinancials,
+  extraReportFinancials,
+} from "@/data/dummy/reportFinancialsData";
+import { researchAssets } from "@/data/researchData";
+import type { ResearchAsset } from "@/lib/types";
+
 export type KsRow = {
   p: string;
   v?: string;
@@ -1544,7 +1552,7 @@ const INDF_SEGS: SegItem[] = [
   },
 ];
 
-const reportFinancials: Record<string, ReportFinancials> = {
+const coreReportFinancials: Record<string, ReportFinancials> = {
   BBCA: { ks: BBCA_KS, is: BBCA_IS, segs: BBCA_SEGS },
   BMRI: { ks: BMRI_KS, is: BMRI_IS, segs: BMRI_SEGS },
   BBNI: { ks: BBNI_KS, is: BBNI_IS, segs: BBNI_SEGS },
@@ -1553,6 +1561,28 @@ const reportFinancials: Record<string, ReportFinancials> = {
   INDF: { ks: INDF_KS, is: INDF_IS, segs: INDF_SEGS },
 };
 
+const reportFinancials: Record<string, ReportFinancials> = {
+  ...coreReportFinancials,
+  ...extraReportFinancials,
+};
+
+const assetLookup = new Map<string, ResearchAsset>();
+for (const asset of researchAssets) {
+  if (!assetLookup.has(asset.ticker)) {
+    assetLookup.set(asset.ticker, asset);
+  }
+}
+
 export function getReportFinancials(ticker: string): ReportFinancials {
-  return reportFinancials[ticker] ?? {};
+  const direct = reportFinancials[ticker];
+  if (direct) return direct;
+
+  const asset = assetLookup.get(ticker);
+  if (!asset) return {};
+
+  if (asset.isSmallCap) {
+    return buildSmallCapFinancials(asset);
+  }
+
+  return buildFallbackFinancials(asset);
 }

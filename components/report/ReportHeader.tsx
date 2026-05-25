@@ -16,12 +16,17 @@ type ReportHeaderProps = {
 
 export function ReportHeader({ asset, assetClassLabel }: ReportHeaderProps) {
   const accent = COLOR_MAP[asset.color] ?? "#5FB88A";
+  const isUSD = asset.price.startsWith("USD") || asset.fv.startsWith("USD");
+  const showRawValue =
+    asset.assetClass === "bonds" ||
+    asset.assetClass === "mmf" ||
+    isUSD ||
+    asset.fv.includes("%");
   const priceLabel =
-    asset.assetClass === "bonds" || asset.price.startsWith("USD")
+    asset.assetClass === "bonds" || asset.assetClass === "mmf" || isUSD
       ? asset.price
       : `Rp ${asset.price}`;
-  const fvLabel =
-    asset.assetClass === "bonds" ? asset.fv : `Fair Value: Rp ${asset.fv}`;
+  const fvLabel = showRawValue ? asset.fv : `Fair Value: Rp ${asset.fv}`;
   return (
     <header className="mb-5 grid gap-4 border-b border-grove-border pb-5 md:grid-cols-[1fr_auto]">
       <div>
@@ -41,6 +46,12 @@ export function ReportHeader({ asset, assetClassLabel }: ReportHeaderProps) {
             style={{ borderColor: `${accent}44`, color: accent }}
           >
             {assetClassLabel ?? assetClassBadge[asset.assetClass]}
+          </span>
+          <span
+            className="rounded-[8px] border px-2 py-1 text-[9px]"
+            style={{ borderColor: `${accent}44`, color: accent }}
+          >
+            Data Lengkap
           </span>
         </div>
       </div>

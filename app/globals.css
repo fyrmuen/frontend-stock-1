@@ -565,6 +565,28 @@ tr.fc-row.is-hl td {
   line-height: 1.6;
 }
 
+.placeholder {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--muted);
+  background: var(--bg2);
+  border: 1px dashed var(--border2);
+  border-radius: 12px;
+}
+.placeholder h3 {
+  font-family: "Fraunces", serif;
+  font-size: 18px;
+  color: var(--text);
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.placeholder p {
+  font-size: 12px;
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
 /* Narasi & Follow-up */
 .narasi-wrap {
   padding: 0 0 1rem;
