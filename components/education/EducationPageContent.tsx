@@ -469,7 +469,6 @@ export function EducationPageContent() {
           Kurikulum terstruktur dari dasar hingga advanced · membangun pemahaman
           sistemik yang menghubungkan teori dengan kondisi pasar nyata.
         </p>
-        <div className="border-t mt-16 mb-10 border-grove-border w-full" />
       </div>
 
       {activeModule === null ? (
