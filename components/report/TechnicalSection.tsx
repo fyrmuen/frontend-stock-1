@@ -74,7 +74,7 @@ export function TechnicalSection({ asset }: { asset: ResearchAsset }) {
           legend: { display: false },
           tooltip: {
             callbacks: {
-              label: (ctx) => ` ${ctx.parsed.y.toLocaleString()}`,
+              label: (ctx) => ` ${(ctx.parsed.y ?? 0).toLocaleString()}`,
             },
           },
         },

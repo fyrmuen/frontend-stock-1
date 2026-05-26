@@ -135,7 +135,7 @@ export function KeyStatsSection({ asset }: { asset: ResearchAsset }) {
           legend: { display: false },
           tooltip: {
             callbacks: {
-              label: (ctx) => ` ${ctx.parsed.y.toLocaleString()}`,
+              label: (ctx) => ` ${(ctx.parsed.y ?? 0).toLocaleString()}`,
               afterLabel: (ctx) =>
                 isForecast(chartRows[ctx.dataIndex]) ? "(Proyeksi Grove)" : "",
             },

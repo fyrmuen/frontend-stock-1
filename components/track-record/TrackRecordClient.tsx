@@ -111,7 +111,7 @@ export function TrackRecordClient() {
           tooltip: {
             callbacks: {
               label: (ctx) =>
-                ` ${ctx.dataset.label}: ${Number(ctx.parsed.y).toFixed(0)}`,
+                ` ${ctx.dataset.label}: ${(ctx.parsed.y ?? 0).toFixed(0)}`,
             },
           },
         },
