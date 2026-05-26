@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 
 type ModuleCard = {
   id: number;
@@ -9,7 +9,7 @@ type ModuleCard = {
   desc: string;
   meta: string;
   tone: "grove" | "blue" | "gold" | "purple" | "red" | "green" | "base";
-  icon: JSX.Element;
+  icon: ReactNode;
   featured?: boolean;
 };
 
